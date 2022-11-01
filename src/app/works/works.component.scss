@@ -8,21 +8,49 @@
         h3 {
           font-weight: bold;
           font-size: 40px;
+          margin-bottom: 14px;
         }
         .filter-wrapper {
           .filters {
+            position: relative;
             display: flex;
             padding-left: 0;
-            translate: -12px;
+            translate: -14px;
             :not(:last-child) {
-              ::after {
+              &::after {
+                position: absolute;
                 content: "/";
-                margin-left: 15px;
-                margin-right: -15px;
+                top: 5px;
               }
             }
             .filter-item {
               list-style-type: none;
+              .filter-btn {
+                position: relative;
+                color: #232323;
+                font-size: 20px;
+                margin: 0 0.7rem;
+                border: none;
+                background: none;
+                &::after {
+                  content: "";
+                  position: absolute;
+                  height: 2px;
+                  bottom: -4px;
+                  margin: 0 auto;
+                  left: 0;
+                  right: 0;
+                  width: 0%;
+                  background: #232323;
+                  transition: width ease-in 100ms;
+                }
+                &:hover,
+                &:active {
+                  &::after {
+                    width: 90%;
+                  }
+                }
+              }
             }
           }
         }
