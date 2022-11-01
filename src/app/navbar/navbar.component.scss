@@ -1,0 +1,113 @@
+@import "node_modules/bootstrap/scss/functions";
+@import "../../../node_modules/bootstrap/scss/variables";
+@import "../../../node_modules/bootstrap/scss/mixins";
+
+nav {
+  background-color: #e6e8e6;
+  font-weight: bold;
+  width: 100%;
+  border-bottom: 1px solid #232323;
+  height: 5vh;
+  min-height: 60px;
+  position: relative;
+  .inner-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .navbar-toggler {
+    position: relative;
+    font-weight: bold;
+    color: #232323;
+    border: none;
+    padding: 3px 0 3px 3px;
+    margin: -3px;
+    z-index: 2;
+    &:focus,
+    &:hover,
+    &:active {
+      outline: 0 !important;
+      box-shadow: none !important;
+    }
+    .navbar-toggler-icon {
+      background-image: none;
+      width: 32px;
+      height: 32px;
+      padding: 6px 0;
+      i {
+        display: block;
+        width: 26px;
+        height: 2px;
+        background: #232323;
+        transition: all 0.5s;
+        margin: 4px auto;
+        border-radius: 3px;
+      }
+    }
+  }
+  .navbar-collapse {
+    transition: 0.5s all;
+  }
+  .collapse {
+    flex: 0 0 50%;
+    width: 50%;
+    .navbar-wrapper {
+      width: 100%;
+      .navbar-nav {
+        width: 100%;
+        align-items: center;
+        .nav-item {
+          display: flex;
+          align-items: center;
+          position: relative;
+          margin: 0 10px;
+          .nav-link {
+            color: #232323;
+          }
+        }
+        .first {
+          margin-left: -8px;
+        }
+        .last {
+          margin-left: auto;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+.navbar-shown {
+  .navbar-toggler-icon {
+    i:first-child {
+      transform: rotate(45deg) translate(3.5px, 3.5px);
+    }
+    i:last-child {
+      transform: rotate(-45deg) translate(1px, -1px);
+    }
+  }
+}
+
+@media screen and (max-width: breakpoint-max(md, $grid-breakpoints)) {
+  .navbar-collapse:not(.show) {
+    display: block;
+    left: 100%;
+  }
+  .navbar-collapse {
+    position: absolute;
+    left: 52%;
+    right: 0;
+    top: -1px;
+    padding: var(--nav-height, 80px) var(--bs-gutter-x, 20px) 16px;
+    background: #e6e8e6;
+    border: 1px solid #232323;
+    transition: 120ms padding ease-in-out;
+    z-index: 1;
+    .first {
+      margin: 0 10px !important;
+    }
+    .last {
+      margin: 0 10px !important;
+    }
+  }
+}

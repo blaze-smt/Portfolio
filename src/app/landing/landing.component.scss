@@ -1,0 +1,222 @@
+@import "node_modules/bootstrap/scss/functions";
+@import "../../../node_modules/bootstrap/scss/variables";
+@import "../../../node_modules/bootstrap/scss/mixins";
+
+.header-home {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #e6e8e6;
+  min-height: 750px;
+  height: 95vh;
+  overflow: hidden;
+  .landing {
+    background-color: #e6e8e6;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 100%;
+    z-index: 0;
+    .title-wrapper {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      padding-bottom: 40px;
+      .title-content {
+        .typography {
+          color: #232323;
+          font-size: 72px;
+          font-weight: 400;
+          line-height: 90px;
+        }
+        .break {
+          display: none;
+        }
+        .btn-talk {
+          position: relative;
+          bottom: 5px;
+          left: 30px;
+          color: #232323;
+          font-size: 20px;
+          padding: 25px 50px;
+          border-radius: 90px;
+          border: 1px solid #232323;
+          white-space: nowrap;
+          transition: all 120ms ease-in-out;
+          span {
+            font-weight: 600;
+          }
+          i {
+            font-style: normal;
+            position: relative;
+            left: 20px;
+          }
+        }
+      }
+    }
+  }
+  .landing-footer {
+    border-top: 1px solid #232323;
+    height: 30%;
+    min-height: 150px;
+    .container {
+      .bottom-wrapper {
+        margin: 20px 0 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: row;
+      }
+      .scroll-hint {
+        display: block;
+        position: relative;
+        display: inline-block;
+        color: #777;
+        margin: 0 auto 0 0;
+        text-decoration: none;
+        width: var(--nav-collapse-width, 50%);
+        margin-right: 0;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      .description {
+        display: flex;
+        width: var(--nav-collapse-width, 50%);
+        span {
+          font-weight: 500;
+          transform: rotate(90deg);
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: breakpoint-min(xxl, $grid-breakpoints)) {
+    // >=1400px
+  }
+
+  @media screen and (min-width: 1900px) {
+    // >= 1900px
+  }
+
+  @media screen and (min-width: 2500px) {
+    // >=2500px
+  }
+
+  @media screen and (max-width: breakpoint-min(xxl, $grid-breakpoints)) {
+    // <1400px
+    .landing {
+      .title-wrapper {
+        .title-content {
+          .typography {
+            font-size: 62px;
+            line-height: 70px;
+          }
+          .break {
+            display: block;
+          }
+          .btn-talk {
+            margin-left: -30px;
+            margin-top: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 1250px) {
+    // <= 1250px
+  }
+
+  @media screen and (max-width: breakpoint-min(xl, $grid-breakpoints)) {
+    // <1200px
+    .landing {
+      .title-wrapper {
+        .title-content {
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: breakpoint-min(lg, $grid-breakpoints)) {
+    // <992px
+    .landing {
+      .title-wrapper {
+        .title-content {
+          .typography {
+            font-size: 52px;
+            line-height: 60px;
+          }
+          .btn-talk {
+            padding: 20px 45px;
+          }
+        }
+      }
+    }
+    .landing-footer {
+      .container {
+        .bottom-wrapper {
+          .scroll-hint {
+            display: none;
+          }
+          .description {
+            width: 100%;
+            height: 100%;
+            justify-content: space-between;
+            flex-direction: column;
+            span {
+              transform: none;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: breakpoint-max(md, $grid-breakpoints)) {
+    // <768px
+    .landing {
+      .title-wrapper {
+        .title-content {
+          .typography {
+            font-size: 42px;
+            line-height: 50px;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: breakpoint-min(sm, $grid-breakpoints)) {
+    // <576px
+    .landing {
+      .title-wrapper {
+        .title-content {
+          .typography {
+            font-size: 32px;
+            line-height: 40px;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 258px) {
+    .landing {
+      .title-wrapper {
+        .title-content {
+          .typography {
+            font-size: 20px;
+            line-height: normal;
+          }
+          .btn-talk {
+            width: 100%;
+            font-size: 20px;
+            padding: auto;
+          }
+        }
+      }
+    }
+  }
+}
