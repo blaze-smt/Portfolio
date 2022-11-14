@@ -66,4 +66,19 @@ body {
 main {
   display: block;
 }
+
+section {
+  border-top: 1px solid #232323;
+}
+
+.section-wrapper {
+  width: 100%;
+  margin: 60px 0;
+}
+
+.section-wrapper h3 {
+  font-weight: bold;
+  font-size: 40px;
+  margin-bottom: 14px;
+}
 /*# sourceMappingURL=styles.css.map */
