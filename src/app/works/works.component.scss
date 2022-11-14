@@ -8,21 +8,104 @@
         h3 {
           font-weight: bold;
           font-size: 40px;
+          margin-bottom: 14px;
         }
         .filter-wrapper {
           .filters {
+            position: relative;
             display: flex;
             padding-left: 0;
-            translate: -12px;
+            translate: -14px;
             :not(:last-child) {
-              ::after {
+              &::after {
+                position: absolute;
                 content: "/";
-                margin-left: 15px;
-                margin-right: -15px;
+                top: 5px;
               }
             }
             .filter-item {
               list-style-type: none;
+              .filter-btn {
+                position: relative;
+                color: #232323;
+                font-size: 20px;
+                margin: 0 0.7rem;
+                border: none;
+                background: none;
+                &::after {
+                  content: "";
+                  position: absolute;
+                  height: 2px;
+                  bottom: -4px;
+                  margin: 0 auto;
+                  left: 0;
+                  right: 0;
+                  width: 0%;
+                  background: #232323;
+                  transition: width ease-in 100ms;
+                }
+                &:hover,
+                &:active {
+                  &::after {
+                    width: 90%;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .projects-wrapper {
+        width: 100%;
+        margin-top: 36px;
+        .projects-list {
+          display: flex;
+          justify-content: flex-start;
+          flex-wrap: wrap;
+          margin-bottom: 60px;
+          .project-bubble {
+            position: relative;
+            border-radius: 70px;
+            border: 1px solid #232323;
+            font-size: 48px;
+            font-weight: 450;
+            padding: 0.25rem 1rem;
+            margin-right: 14px;
+            margin-bottom: 14px;
+            text-decoration: none;
+            color: #232323;
+            background: none;
+            overflow: hidden;
+            z-index: 1;
+            transition: all ease-in-out 150ms;
+            &::before {
+              content: "";
+              width: 100%;
+              height: 100%;
+              background: radial-gradient(
+                rgba(92, 120, 150, 100),
+                rgba(48, 111, 178, 0.6),
+                rgba(34, 107, 184, 0.43),
+                rgba(92, 120, 150, 0.33)
+              );
+              position: absolute;
+              top: 0;
+              left: 0;
+              z-index: -1;
+              opacity: 100%;
+              border-radius: 70px;
+              opacity: 0;
+              transition: all ease-in-out 150ms;
+              background-size: 100% 5%;
+              background-position: 50% 50%;
+            }
+            &:hover {
+              color: white;
+              border: 1px solid white;
+              cursor: pointer;
+              &::before {
+                opacity: 100;
+              }
             }
           }
         }
