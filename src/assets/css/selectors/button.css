@@ -7,6 +7,43 @@
   font-size: 48px;
 }
 
+.btn-cta {
+  position: relative;
+  color: #232323;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-cta i {
+  font-style: normal;
+  font-size: 48px;
+  vertical-align: middle;
+}
+
+.btn-cta::after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  bottom: 1px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background: #232323;
+  -webkit-transition: width ease-in 100ms;
+  transition: width ease-in 100ms;
+}
+
+.btn-cta:hover, .btn-cta:active {
+  color: transparent;
+  background: radial-gradient(#5c7896, rgba(48, 111, 178, 0.6), rgba(34, 107, 184, 0.43), rgba(92, 120, 150, 0.33));
+  background-clip: text;
+}
+
+.btn-cta:hover::after, .btn-cta:active::after {
+  width: 0;
+}
+
 .btn-special {
   position: relative;
   border-radius: 70px;

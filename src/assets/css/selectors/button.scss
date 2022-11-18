@@ -1,3 +1,7 @@
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+
 .btn-a {
   color: #232323;
   text-decoration: none;
@@ -6,11 +10,47 @@
   }
 }
 
+.btn-cta {
+  position: relative;
+  color: #232323;
+  text-decoration: none;
+  cursor: pointer;
+  i {
+    font-style: normal;
+    font-size: 48px;
+    vertical-align: middle;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    bottom: 1px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: #232323;
+    transition: width ease-in 100ms;
+  }
+  &:hover,
+  &:active {
+    color: transparent;
+    background: radial-gradient(
+      rgba(92, 120, 150, 100),
+      rgba(48, 111, 178, 0.6),
+      rgba(34, 107, 184, 0.43),
+      rgba(92, 120, 150, 0.33)
+    );
+    background-clip: text;
+    &::after {
+      width: 0;
+    }
+  }
+}
 .btn-special {
   position: relative;
   border-radius: 70px;
   border: 1px solid #232323;
-  font-size: 48px;
   font-weight: 450;
   padding: 0.25rem 1rem;
   margin-right: 14px;
@@ -21,6 +61,9 @@
   overflow: hidden;
   z-index: 1;
   transition: all ease-in-out 150ms;
+  span {
+    font-size: 48px;
+  }
   &::before {
     content: "";
     width: 100%;
@@ -50,4 +93,49 @@
       opacity: 100;
     }
   }
+}
+
+@media screen and (max-width: breakpoint-min(xxl, $grid-breakpoints)) {
+  // <1400px
+}
+
+@media screen and (max-width: 1250px) {
+  // <= 1250px
+}
+
+@media screen and (max-width: breakpoint-min(xl, $grid-breakpoints)) {
+  // <1200px
+}
+
+@media screen and (max-width: breakpoint-min(lg, $grid-breakpoints)) {
+  // <992px
+  .btn-cta {
+    i {
+      font-size: 32px;
+    }
+    &:after {
+      height: 2px;
+    }
+  }
+}
+
+@media screen and (max-width: breakpoint-max(md, $grid-breakpoints)) {
+  // <768px
+  .btn-cta {
+    i {
+      font-size: 24px;
+    }
+  }
+}
+
+@media screen and (max-width: breakpoint-min(sm, $grid-breakpoints)) {
+  // <576px
+  .btn-special {
+    span {
+      font-size: 40px;
+    }
+  }
+}
+
+@media screen and (max-width: 258px) {
 }

@@ -39,6 +39,28 @@
   text-decoration: none;
 }
 
+.btn-a span {
+  font-size: 48px;
+}
+
+.btn-special {
+  position: relative;
+  border-radius: 70px;
+  border: 1px solid #232323;
+  font-size: 48px;
+  font-weight: 450;
+  padding: 0.25rem 1rem;
+  margin-right: 14px;
+  margin-bottom: 14px;
+  text-decoration: none;
+  color: #232323;
+  background: none;
+  overflow: hidden;
+  z-index: 1;
+  -webkit-transition: all ease-in-out 150ms;
+  transition: all ease-in-out 150ms;
+}
+
 .btn-special::before {
   content: "";
   width: 100%;
