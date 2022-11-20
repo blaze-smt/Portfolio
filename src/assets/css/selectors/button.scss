@@ -78,7 +78,6 @@
     top: 0;
     left: 0;
     z-index: -1;
-    opacity: 100%;
     border-radius: 70px;
     opacity: 0;
     transition: all ease-in-out 150ms;
@@ -87,7 +86,7 @@
   }
   &:hover {
     color: white;
-    border: 1px solid white;
+    border: 1px solid rgba(255, 255, 255, 0.2);
     cursor: pointer;
     &::before {
       opacity: 100;

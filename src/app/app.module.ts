@@ -8,6 +8,7 @@ import { LandingComponent } from './landing/landing.component';
 import { WorksComponent } from './works/works.component';
 import { BioComponent } from './bio/bio.component';
 import { ContactComponent } from './contact/contact.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ContactComponent } from './contact/contact.component';
     LandingComponent,
     WorksComponent,
     BioComponent,
-    ContactComponent
+    ContactComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
