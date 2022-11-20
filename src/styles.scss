@@ -1,42 +1,6 @@
-@import "./assets/css/fonts/_cabinet-grotesk";
-@import "./assets/css/selectors/button.scss";
-
-*,
-*::before,
-*::after {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  font-family: CabinetGrotesk-Variable;
-}
-
-html {
-  -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  font-size: 20 px;
-  scroll-behavior: smooth;
-  border: 1px solid #232323;
-  background-color: #e6e8e6;
-  scroll-behavior: smooth;
-}
-
-html,
-body {
-  overflow-x: hidden;
-}
-
-body {
-  position: relative;
-  margin: 0;
-  background-color: #e6e8e6 !important;
-}
-
-main {
-  display: block;
-}
-
-section {
-  border-top: 1px solid #232323;
-}
+@import "assets/css/fonts/_cabinet-grotesk";
+@import "assets/css/selectors/button.scss";
+@import "assets/css/defaults/defaults.scss";
 
 .section-wrapper {
   width: 100%;
