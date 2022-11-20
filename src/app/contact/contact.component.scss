@@ -1,0 +1,111 @@
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  .contact-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #232323;
+    line-height: 70px;
+    text-transform: uppercase;
+    width: 100%;
+    font-size: 72px;
+    :first-child {
+      font-size: 1em;
+      font-weight: 600;
+    }
+    :last-child {
+      font-size: 0.5em;
+      font-weight: 400;
+      line-height: 1.2em;
+      strong {
+        font-size: inherit;
+        font-weight: 600;
+      }
+      i {
+        font-size: inherit;
+        font-style: normal;
+      }
+    }
+  }
+  .btn-contact {
+    font-size: 60px;
+    margin-top: 60px;
+  }
+}
+
+@media screen and (min-width: breakpoint-min(xxl, $grid-breakpoints)) {
+  // >=1400px
+}
+
+@media screen and (min-width: 1900px) {
+  // >= 1900px
+}
+
+@media screen and (min-width: 2500px) {
+  // >=2500px
+}
+
+@media screen and (max-width: breakpoint-min(xxl, $grid-breakpoints)) {
+  // <1400px
+  .contact {
+    .contact-text {
+      font-size: 62px;
+    }
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  // <= 1250px
+}
+
+@media screen and (max-width: breakpoint-min(xl, $grid-breakpoints)) {
+  // <1200px
+  .contact {
+    .contact-text {
+      font-size: 48px;
+    }
+  }
+}
+
+@media screen and (max-width: breakpoint-min(lg, $grid-breakpoints)) {
+  // <992px
+  .contact {
+    .contact-text {
+      font-size: 40px;
+      line-height: 60px;
+    }
+    .btn-contact {
+      i {
+        font-size: 40px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: breakpoint-max(md, $grid-breakpoints)) {
+  // <768px
+  .contact {
+    .contact-text {
+      font-size: 32px;
+      line-height: 50px;
+    }
+  }
+}
+
+@media screen and (max-width: breakpoint-min(sm, $grid-breakpoints)) {
+  // <576px
+  .contact {
+    .contact-text {
+      line-height: 40px;
+    }
+  }
+}
+
+@media screen and (max-width: 258px) {
+}

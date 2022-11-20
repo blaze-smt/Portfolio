@@ -7,21 +7,19 @@
   flex-direction: row;
   justify-content: flex-start;
   flex-wrap: wrap;
+  margin-top: 0;
+  margin-bottom: 0;
   .bio-text {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    margin: 0 60px 120px 0;
+    margin: 60px 60px 0 0;
     max-width: 550px;
     p {
       text-transform: uppercase;
     }
   }
-  .break-bio {
-    display: none;
-  }
   .bio-image {
-    margin: -60px 0 -60px 0;
     width: auto;
     height: 50vh;
     max-height: 750px;
@@ -30,9 +28,6 @@
 
 @media screen and (min-width: breakpoint-min(xxl, $grid-breakpoints)) {
   // >=1400px
-  .break-bio {
-    display: block;
-  }
 }
 
 @media screen and (min-width: 1900px) {
@@ -53,6 +48,11 @@
 
 @media screen and (max-width: breakpoint-min(xl, $grid-breakpoints)) {
   // <1200px
+  .bio {
+    .bio-text {
+      margin-bottom: 40px;
+    }
+  }
 }
 
 @media screen and (max-width: breakpoint-min(lg, $grid-breakpoints)) {

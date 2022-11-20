@@ -10,7 +10,7 @@
   }
 }
 
-.btn-cta {
+.btn-contact {
   position: relative;
   color: #232323;
   text-decoration: none;
@@ -109,7 +109,7 @@
 
 @media screen and (max-width: breakpoint-min(lg, $grid-breakpoints)) {
   // <992px
-  .btn-cta {
+  .btn-contact {
     i {
       font-size: 32px;
     }
@@ -121,7 +121,7 @@
 
 @media screen and (max-width: breakpoint-max(md, $grid-breakpoints)) {
   // <768px
-  .btn-cta {
+  .btn-contact {
     i {
       font-size: 24px;
     }

@@ -7,6 +7,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { LandingComponent } from './landing/landing.component';
 import { WorksComponent } from './works/works.component';
 import { BioComponent } from './bio/bio.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { BioComponent } from './bio/bio.component';
     NavbarComponent,
     LandingComponent,
     WorksComponent,
-    BioComponent
+    BioComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
