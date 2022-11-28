@@ -15,6 +15,32 @@ nav {
     display: flex;
     justify-content: space-between;
   }
+  .navbar-brand {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .nav-hover-underline {
+    position: relative;
+    cursor: pointer;
+    &::after {
+      content: "";
+      position: absolute;
+      height: 2px;
+      bottom: 4px;
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+      width: 0%;
+      background: #232323;
+      transition: width ease-in 100ms;
+    }
+    &:hover,
+    &:active {
+      &::after {
+        width: 90%;
+      }
+    }
+  }
   .navbar-toggler {
     position: relative;
     font-weight: bold;
@@ -70,7 +96,6 @@ nav {
         }
         .last {
           margin-left: auto;
-          text-decoration: underline;
         }
       }
     }

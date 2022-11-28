@@ -63,6 +63,7 @@
       }
       .description {
         display: flex;
+        justify-content: flex-end;
         width: var(--nav-collapse-width, 50%);
         span {
           font-weight: 500;
