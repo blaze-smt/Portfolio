@@ -1,0 +1,27 @@
+[
+  {
+    "name": "This Portfolio",
+    "type": "filter-website",
+    "link": "this-portfolio"
+  },
+  {
+    "name": "Stapled Hills",
+    "type": "filter-clothing filter-website",
+    "link": "stapled-hills"
+  },
+  {
+    "name": "INFST",
+    "type": "filter-clothing",
+    "link": "infst"
+  },
+  {
+    "name": "My Figma",
+    "type": "filter-other",
+    "link": "my-figma"
+  },
+  {
+    "name": "Bohlman AA",
+    "type": "filter-other",
+    "link": "bolhman-aa"
+  }
+]

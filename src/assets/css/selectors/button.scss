@@ -63,6 +63,7 @@
   transition: all ease-in-out 150ms;
   span {
     font-size: 48px;
+    text-transform: uppercase;
   }
   &::before {
     content: "";

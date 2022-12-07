@@ -21,7 +21,10 @@
     "paths": {
       "assets/*": ["assets/*"],
       "node_modules/*": ["node_modules/*"]
-    }
+    },
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "strictPropertyInitialization": false
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,

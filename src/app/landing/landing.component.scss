@@ -57,6 +57,7 @@
         text-decoration: none;
         width: var(--nav-collapse-width, 50%);
         margin-right: 0;
+        cursor: pointer;
         &:hover {
           text-decoration: underline;
         }

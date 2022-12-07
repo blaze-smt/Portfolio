@@ -1,30 +1,72 @@
-<section>
+<section id="works">
   <div class="container">
     <div class="section-wrapper works">
       <div class="works-title">
         <h3>WORKS</h3>
         <ul class="filters">
           <li class="filter-item">
-            <button class="filter-btn">ALL</button>
+            <button
+              class="filter-btn"
+              type="button"
+              id="filter-all"
+              aria-controls="projects-list"
+              aria-label="Toggle all filter"
+              (click)="filterWorks($event)"
+              #filterbtn
+            >
+              ALL
+            </button>
           </li>
           <li class="filter-item">
-            <button class="filter-btn">WEBSITES</button>
+            <button
+              class="filter-btn"
+              type="button"
+              id="filter-website"
+              aria-controls="projects-list"
+              aria-label="Toggle websites filter"
+              (click)="filterWorks($event)"
+              #filterbtn
+            >
+              WEBSITES
+            </button>
           </li>
           <li class="filter-item">
-            <button class="filter-btn">CLOTHES</button>
+            <button
+              class="filter-btn"
+              type="button"
+              id="filter-clothing"
+              aria-controls="projects-list"
+              aria-label="Toggle clothing filter"
+              (click)="filterWorks($event)"
+              #filterbtn
+            >
+              CLOTHES
+            </button>
           </li>
           <li class="filter-item">
-            <button class="filter-btn">OTHER</button>
+            <button
+              class="filter-btn"
+              type="button"
+              id="filter-other"
+              aria-controls="projects-list"
+              aria-label="Toggle other filter"
+              (click)="filterWorks($event)"
+              #filterbtn
+            >
+              OTHER
+            </button>
           </li>
         </ul>
       </div>
       <div class="projects-wrapper">
-        <div class="projects-list">
-          <a class="btn-a btn-special"><span>THIS PORTFOLIO</span></a>
-          <a class="btn-a btn-special"><span>STAPLED HILLS</span></a>
-          <a class="btn-a btn-special"><span>INFST</span></a>
-          <a class="btn-a btn-special"><span>MY FIGMA</span></a>
-          <a class="btn-a btn-special"><span>BOHLMAN AA</span></a>
+        <div class="projects-list" id="projects-list">
+          <a
+            *ngFor="let work of filteredWorks"
+            class="btn-a btn-special"
+            href="/{{ work.link }}"
+          >
+            <span>{{ work.name }}</span>
+          </a>
         </div>
       </div>
     </div>
