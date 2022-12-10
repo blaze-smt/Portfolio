@@ -10,18 +10,13 @@
     "link": "stapled-hills"
   },
   {
-    "name": "INFST",
-    "type": "filter-clothing",
-    "link": "infst"
-  },
-  {
-    "name": "My Figma",
-    "type": "filter-other",
-    "link": "my-figma"
-  },
-  {
     "name": "Bohlman AA",
     "type": "filter-other",
     "link": "bolhman-aa"
+  },
+  {
+    "name": "NTC Lego",
+    "type": "filter-website",
+    "link": "ntc-lego"
   }
 ]

@@ -10,7 +10,8 @@
   }
 }
 
-.btn-contact {
+.btn-contact,
+.btn-projects {
   position: relative;
   color: #232323;
   text-decoration: none;
@@ -19,6 +20,7 @@
     font-style: normal;
     font-size: 48px;
     vertical-align: middle;
+    margin-left: 6px;
   }
   &::after {
     content: "";
@@ -109,7 +111,8 @@
 
 @media screen and (max-width: breakpoint-min(lg, $grid-breakpoints)) {
   // <992px
-  .btn-contact {
+  .btn-contact,
+  .btn-projects {
     i {
       font-size: 32px;
     }
@@ -121,7 +124,8 @@
 
 @media screen and (max-width: breakpoint-max(md, $grid-breakpoints)) {
   // <768px
-  .btn-contact {
+  .btn-contact,
+  .btn-projects {
     i {
       font-size: 24px;
     }

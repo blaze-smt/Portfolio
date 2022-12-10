@@ -9,6 +9,9 @@ import { WorksComponent } from './works/works.component';
 import { BioComponent } from './bio/bio.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
+import { HomeComponent } from './home/home.component';
+import { ThisPortfolioComponent } from './this-portfolio/this-portfolio.component';
+import { ErrorComponent } from './error/error.component';
 
 @NgModule({
   declarations: [
@@ -18,13 +21,13 @@ import { FooterComponent } from './footer/footer.component';
     WorksComponent,
     BioComponent,
     ContactComponent,
-    FooterComponent
+    FooterComponent,
+    HomeComponent,
+    ThisPortfolioComponent,
+    ErrorComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

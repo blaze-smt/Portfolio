@@ -63,7 +63,7 @@
           <a
             *ngFor="let work of filteredWorks"
             class="btn-a btn-special"
-            href="/{{ work.link }}"
+            routerLink="/{{ work.link }}"
           >
             <span>{{ work.name }}</span>
           </a>

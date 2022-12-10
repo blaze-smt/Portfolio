@@ -1,0 +1,102 @@
+.header-error {
+  height: 90vh;
+}
+
+.header-error .landing {
+  background-color: #e6e8e6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  height: 100%;
+  z-index: 0;
+}
+
+.header-error .landing .title-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  padding-bottom: 40px;
+}
+
+.header-error .landing .title-wrapper .error-message {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #232323;
+}
+
+.header-error .landing .title-wrapper .error-message h1 {
+  margin-bottom: 0;
+  font-size: 72px;
+}
+
+.header-error .landing .title-wrapper .error-message span {
+  margin-top: 0;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.header-error .landing .title-wrapper .error-message p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 4em;
+  font-size: 24px;
+}
+
+.header-error .landing .title-wrapper .error-message p a {
+  position: relative;
+  text-decoration: none;
+  color: #232323;
+}
+
+.header-error .landing .title-wrapper .error-message p a::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  bottom: 1px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background: #232323;
+  -webkit-transition: width ease-in 100ms;
+  transition: width ease-in 100ms;
+}
+
+.header-error .landing .title-wrapper .error-message p a:hover, .header-error .landing .title-wrapper .error-message p a:active {
+  color: transparent;
+  background: radial-gradient(#5c7896, rgba(48, 111, 178, 0.6), rgba(34, 107, 184, 0.43), rgba(92, 120, 150, 0.33));
+  background-clip: text;
+}
+
+.header-error .landing .title-wrapper .error-message p a:hover::after, .header-error .landing .title-wrapper .error-message p a:active::after {
+  width: 0;
+}
+/*# sourceMappingURL=error.component.css.map */
