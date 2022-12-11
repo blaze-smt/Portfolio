@@ -14,6 +14,7 @@ import { ThisPortfolioComponent } from './this-portfolio/this-portfolio.componen
 import { ErrorComponent } from './error/error.component';
 import { StapledHillsComponent } from './stapled-hills/stapled-hills.component';
 import { BohlmanAaComponent } from './bohlman-aa/bohlman-aa.component';
+import { NtcLegoComponent } from './ntc-lego/ntc-lego.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { BohlmanAaComponent } from './bohlman-aa/bohlman-aa.component';
     ErrorComponent,
     StapledHillsComponent,
     BohlmanAaComponent,
+    NtcLegoComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
