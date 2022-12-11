@@ -13,6 +13,7 @@ import { HomeComponent } from './home/home.component';
 import { ThisPortfolioComponent } from './this-portfolio/this-portfolio.component';
 import { ErrorComponent } from './error/error.component';
 import { StapledHillsComponent } from './stapled-hills/stapled-hills.component';
+import { BohlmanAaComponent } from './bohlman-aa/bohlman-aa.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { StapledHillsComponent } from './stapled-hills/stapled-hills.component';
     ThisPortfolioComponent,
     ErrorComponent,
     StapledHillsComponent,
+    BohlmanAaComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
