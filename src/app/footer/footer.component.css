@@ -23,12 +23,48 @@
   fill: url("#radial");
 }
 
-.copyright {
+.bottom {
   margin: 0;
+  border-top: 1px solid #232323;
 }
 
-.copyright #copyright {
+.bottom .bottom-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bottom .bottom-wrapper #copyright {
   font-style: normal;
   margin: 8px 0;
+}
+
+.bottom .bottom-wrapper #top-btn {
+  position: relative;
+  cursor: pointer;
+}
+
+.bottom .bottom-wrapper #top-btn::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  bottom: 3px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  width: 0%;
+  background: #232323;
+  -webkit-transition: width ease-in 100ms;
+  transition: width ease-in 100ms;
+}
+
+.bottom .bottom-wrapper #top-btn:hover::after, .bottom .bottom-wrapper #top-btn:active::after {
+  width: 90%;
 }
 /*# sourceMappingURL=footer.component.css.map */

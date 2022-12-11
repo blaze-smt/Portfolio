@@ -17,10 +17,38 @@
   }
 }
 
-.copyright {
+.bottom {
   margin: 0;
-  #copyright {
-    font-style: normal;
-    margin: 8px 0;
+  border-top: 1px solid #232323;
+  .bottom-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    #copyright {
+      font-style: normal;
+      margin: 8px 0;
+    }
+    #top-btn {
+      position: relative;
+      cursor: pointer;
+      &::after {
+        content: "";
+        position: absolute;
+        height: 1px;
+        bottom: 3px;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        width: 0%;
+        background: #232323;
+        transition: width ease-in 100ms;
+      }
+      &:hover,
+      &:active {
+        &::after {
+          width: 90%;
+        }
+      }
+    }
   }
 }
