@@ -12,6 +12,7 @@ import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { ThisPortfolioComponent } from './this-portfolio/this-portfolio.component';
 import { ErrorComponent } from './error/error.component';
+import { StapledHillsComponent } from './stapled-hills/stapled-hills.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { ErrorComponent } from './error/error.component';
     HomeComponent,
     ThisPortfolioComponent,
     ErrorComponent,
+    StapledHillsComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
