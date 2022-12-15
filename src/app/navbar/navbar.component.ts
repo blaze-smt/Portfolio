@@ -1,4 +1,5 @@
 import { Component, OnInit, Inject } from '@angular/core';
+import { Router } from '@angular/router';
 import { DOCUMENT } from '@angular/common';
 
 @Component({
@@ -7,7 +8,10 @@ import { DOCUMENT } from '@angular/common';
   styleUrls: ['./navbar.component.scss'],
 })
 export class NavbarComponent implements OnInit {
-  constructor(@Inject(DOCUMENT) private document: Document) {}
+  constructor(
+    @Inject(DOCUMENT) private document: Document,
+    private _router: Router
+  ) {}
 
   ngOnInit(): void {}
 
@@ -29,7 +33,15 @@ export class NavbarComponent implements OnInit {
   }
 
   scrollPosition(id: string) {
-    const element = this.document.getElementById(id);
-    this.scrollToElement(element as HTMLElement);
+    if (this._router.url == '/') {
+      const element = this.document.getElementById(id);
+      this.scrollToElement(element as HTMLElement);
+    } else {
+      this._router.navigate(['/']).then(() => {
+        // do whatever you need after navigation succeeds
+        const element = this.document.getElementById(id);
+        this.scrollToElement(element as HTMLElement);
+      });
+    }
   }
 }
