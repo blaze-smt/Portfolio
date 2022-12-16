@@ -1,3 +1,7 @@
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+
 .works {
   display: flex;
   flex-direction: column;
@@ -55,4 +59,59 @@
       flex-wrap: wrap;
     }
   }
+}
+
+@media screen and (min-width: breakpoint-min(xxl, $grid-breakpoints)) {
+  // >=1400px
+}
+
+@media screen and (min-width: 1900px) {
+  // >= 1900px
+}
+
+@media screen and (min-width: 2500px) {
+  // >=2500px
+}
+
+@media screen and (max-width: breakpoint-min(xxl, $grid-breakpoints)) {
+  // <1400px
+}
+
+@media screen and (max-width: 1250px) {
+  // <= 1250px
+}
+
+@media screen and (max-width: breakpoint-min(xl, $grid-breakpoints)) {
+  // <1200px
+}
+
+@media screen and (max-width: breakpoint-min(lg, $grid-breakpoints)) {
+  // <992px
+}
+
+@media screen and (max-width: breakpoint-max(md, $grid-breakpoints)) {
+  // <768px
+}
+
+@media screen and (max-width: breakpoint-min(sm, $grid-breakpoints)) {
+  // <576px
+  .works {
+    .filters {
+      translate: -4px;
+      :not(:last-child) {
+        &::after {
+          top: 1px;
+        }
+      }
+      .filter-item {
+        .filter-btn {
+          font-size: 16px;
+          margin: 0 0.2rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 258px) {
 }

@@ -2,14 +2,14 @@
   <div class="container">
     <div class="mobile-links">
       <a routerLink="/">Go back</a>
-      <!-- <a routerLink="/">Link</a> -->
+      <a href="https://github.com/blaze-smt/ntc-lego" target="_blank">Link</a>
     </div>
   </div>
   <div class="seperator-mobile"></div>
   <div class="container project">
     <div class="title-wrapper">
       <div class="landing-image">
-        <img src="assets/images/ntclego-header.jpg" />
+        <img src="assets/images/ntclego-header.jpg" alt="" />
       </div>
     </div>
   </div>
@@ -18,7 +18,11 @@
   <div class="container">
     <div class="section-wrapper desc">
       <div class="desc-title">
-        <h1>NTC Lego</h1>
+        <h1>
+          <a href="https://github.com/blaze-smt/ntc-lego" target="_blank"
+            >NTC Lego</a
+          >
+        </h1>
       </div>
       <div class="desc-p">
         <p>
@@ -56,7 +60,11 @@
           </p>
         </div>
         <div class="section-image">
-          <img src="assets/images/ntclego-sprint1.jpg" />
+          <img
+            src="assets/images/ntclego-sprint1.jpg"
+            (click)="enlargeImage($event)"
+            alt="Specification document in Figma for NTC Lego project"
+          />
         </div>
       </div>
     </div>
@@ -74,7 +82,11 @@
           </p>
         </div>
         <div class="section-image">
-          <img src="assets/images/ntclego-sprint2.jpg" />
+          <img
+            src="assets/images/ntclego-sprint2.jpg"
+            (click)="enlargeImage($event)"
+            alt="Wireframe document in Figma for NTC Lego project"
+          />
         </div>
       </div>
     </div>
@@ -91,7 +103,11 @@
           </p>
         </div>
         <div class="section-image">
-          <img src="assets/images/ntclego-sprint3.jpg" />
+          <img
+            src="assets/images/ntclego-sprint3.jpg"
+            (click)="enlargeImage($event)"
+            alt="Items table in NTC Lego project"
+          />
         </div>
       </div>
     </div>
@@ -110,7 +126,11 @@
           </p>
         </div>
         <div class="section-image">
-          <img src="assets/images/ntclego-sprint4.jpg" />
+          <img
+            src="assets/images/ntclego-sprint4.jpg"
+            (click)="enlargeImage($event)"
+            alt="Admin dashboard page in NTC Lego project"
+          />
         </div>
       </div>
     </div>
@@ -127,7 +147,10 @@
           </p>
         </div>
         <div class="section-image">
-          <img src="assets/images/ntclego-sprint5.jpg" />
+          <img
+            src="assets/images/ntclego-sprint5.jpg"
+            (click)="enlargeImage($event)"
+          />
         </div>
       </div>
     </div>
@@ -146,7 +169,11 @@
           </p>
         </div>
         <div class="section-image">
-          <img src="assets/images/ntclego-conclusion.jpg" />
+          <img
+            src="assets/images/ntclego-conclusion.jpg"
+            (click)="enlargeImage($event)"
+            alt="Figma file organization for NTC Lego project"
+          />
         </div>
       </div>
     </div>

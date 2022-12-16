@@ -9,7 +9,7 @@
   <div class="container project">
     <div class="title-wrapper">
       <div class="landing-image">
-        <img src="assets/images/portfolio-header.jpg" />
+        <img src="assets/images/portfolio-header.jpg" alt="" />
       </div>
     </div>
   </div>
@@ -50,7 +50,10 @@
           </p>
         </div>
         <div class="section-image">
-          <img src="assets/images/portfolio-users.jpg" />
+          <img
+            src="assets/images/portfolio-users.jpg"
+            (click)="enlargeImage($event)"
+          />
         </div>
       </div>
     </div>
@@ -68,7 +71,11 @@
           </p>
         </div>
         <div class="section-image">
-          <img src="assets/images/portfolio-specdoc.jpg" />
+          <img
+            src="assets/images/portfolio-specdoc.jpg"
+            (click)="enlargeImage($event)"
+            alt="My portfolio specification document in Figma"
+          />
         </div>
       </div>
     </div>
@@ -86,7 +93,11 @@
           </p>
         </div>
         <div class="section-image">
-          <img src="assets/images/portfolio-wireframes.jpg" />
+          <img
+            src="assets/images/portfolio-wireframes.jpg"
+            (click)="enlargeImage($event)"
+            alt="My portfolio wireframe document in Figma"
+          />
         </div>
       </div>
     </div>
@@ -106,7 +117,11 @@
           </p>
         </div>
         <div class="section-image">
-          <img src="assets/images/portfolio-prototype.jpg" />
+          <img
+            src="assets/images/portfolio-prototype.jpg"
+            (click)="enlargeImage($event)"
+            alt="My portfolio mockup and prototyping document in Figma"
+          />
         </div>
       </div>
     </div>
@@ -124,7 +139,11 @@
           </p>
         </div>
         <div class="section-image">
-          <img src="assets/images/portfolio-code.jpg" />
+          <img
+            src="assets/images/portfolio-code.jpg"
+            (click)="enlargeImage($event)"
+            alt="Angular framework for my portfolio"
+          />
         </div>
       </div>
     </div>

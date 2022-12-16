@@ -73,6 +73,7 @@ nav {
   }
   .navbar-collapse {
     transition: 0.5s all;
+    min-width: 200px;
   }
   .collapse {
     flex: 0 0 50%;

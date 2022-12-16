@@ -1,4 +1,11 @@
-import { Component, OnInit, Inject } from '@angular/core';
+import {
+  Component,
+  OnInit,
+  Inject,
+  Renderer2,
+  ViewChild,
+  ElementRef,
+} from '@angular/core';
 import { Router } from '@angular/router';
 import { DOCUMENT } from '@angular/common';
 
@@ -8,14 +15,29 @@ import { DOCUMENT } from '@angular/common';
   styleUrls: ['./navbar.component.scss'],
 })
 export class NavbarComponent implements OnInit {
+  @ViewChild('togglerText') togglerText: ElementRef;
+  @ViewChild('togglerIcon') togglerIcon: ElementRef;
+  @ViewChild('navbarMobile') navbarMobile: ElementRef;
+
   constructor(
     @Inject(DOCUMENT) private document: Document,
-    private _router: Router
-  ) {}
+    private _router: Router,
+    private renderer: Renderer2
+  ) {
+    this.renderer.listen('window', 'click', (e: Event) => {
+      if (
+        e.target !== this.togglerText.nativeElement &&
+        e.target !== this.togglerIcon.nativeElement &&
+        e.target !== this.navbarMobile.nativeElement
+      ) {
+        this.status = true;
+      }
+    });
+  }
 
   ngOnInit(): void {}
 
-  status: boolean = true;
+  status = true;
   toggleNav(): void {
     this.status = !this.status;
   }
@@ -33,6 +55,10 @@ export class NavbarComponent implements OnInit {
   }
 
   scrollPosition(id: string) {
+    if (!this.status) {
+      this.toggleNav();
+    }
+
     if (this._router.url == '/') {
       const element = this.document.getElementById(id);
       this.scrollToElement(element as HTMLElement);

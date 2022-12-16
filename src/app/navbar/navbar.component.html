@@ -11,10 +11,15 @@
         aria-controls="top-navbar"
         aria-expanded="false"
         aria-label="Toggle navigation"
+        #togglerText
       >
-        MENU<span class="navbar-toggler-icon"><i></i><i></i></span>
+        MENU<span class="navbar-toggler-icon" #togglerIcon><i></i><i></i></span>
       </button>
-      <div class="collapse navbar-collapse" [ngClass]="status ? '' : 'show'">
+      <div
+        class="collapse navbar-collapse"
+        [ngClass]="status ? '' : 'show'"
+        #navbarMobile
+      >
         <div class="navbar-wrapper">
           <ul class="navbar-nav">
             <li class="nav-item first">
