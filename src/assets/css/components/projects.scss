@@ -30,16 +30,22 @@
 .desc-title,
 .desc-p,
 .section-text {
-  text-transform: uppercase;
-  h1,
-  h5 {
+  h1 {
+    text-transform: uppercase;
     font-size: 36px;
-    margin-bottom: 14px;
+    margin-bottom: 36px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     a {
       position: relative;
       color: #232323;
       text-decoration: none;
     }
+  }
+  .role {
+    font-size: 0.65em;
+    margin-top: 14px;
   }
   p {
     font-size: 20px;
@@ -105,73 +111,6 @@
   }
 }
 
-.section {
-  border-top: 1px solid #232323;
-  .section-wrapper {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-top: 0;
-    margin-bottom: 0;
-    .section-text {
-      display: flex;
-      flex-direction: column;
-      max-width: 550px;
-      margin: 60px 60px 60px 0;
-    }
-    .section-image {
-      display: flex;
-      align-items: center;
-      img {
-        height: 50vh;
-        max-height: 350px;
-        width: auto;
-      }
-    }
-  }
-}
-
-.section-right {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  .section-image {
-    border-right: 1px solid #232323;
-  }
-}
-
-.section-left {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: flex-start;
-  .section-image {
-    border-left: 1px solid #232323;
-  }
-}
-
-.blurred-background {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(230, 232, 230, 0.9);
-  z-index: 2;
-}
-
-.enlarged-img {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border: 1px solid #232323;
-  max-width: 100vw;
-  max-height: 750px;
-  width: auto;
-  height: auto;
-}
-
 @media screen and (min-width: breakpoint-min(xxl, $grid-breakpoints)) {
   // >=1400px
 }
@@ -194,24 +133,16 @@
 
 @media screen and (max-width: breakpoint-min(xl, $grid-breakpoints)) {
   // <1200px
-  .section-right,
-  .section-left {
-    .section-image {
-      border: none;
-    }
+  .seperator-mobile {
+    display: block;
+  }
+  .mobile-links {
+    display: flex;
   }
 }
 
 @media screen and (max-width: breakpoint-min(lg, $grid-breakpoints)) {
   // <992px
-
-  .seperator-mobile {
-    display: block;
-  }
-
-  .mobile-links {
-    display: flex;
-  }
 }
 
 @media screen and (max-width: breakpoint-max(md, $grid-breakpoints)) {
@@ -220,15 +151,8 @@
 
 @media screen and (max-width: breakpoint-min(sm, $grid-breakpoints)) {
   // <576px
-  .section {
-    .section-wrapper {
-      .section-image {
-        img {
-          width: 100%;
-          height: auto;
-        }
-      }
-    }
+  .desc-title h1 {
+    font-size: 1.5em;
   }
 }
 
