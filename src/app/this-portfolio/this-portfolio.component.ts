@@ -12,12 +12,4 @@ export class ThisPortfolioComponent implements OnInit {
   }
 
   ngOnInit(): void {}
-
-  enlargeImage(e: Event): void {
-    (e.target as HTMLElement).classList.toggle('enlarged-img');
-    (e.target as HTMLElement).parentElement?.classList.toggle('section-image');
-    (e.target as HTMLElement).parentElement?.classList.toggle(
-      'blurred-background'
-    );
-  }
 }
