@@ -5,6 +5,7 @@ import { ThisPortfolioComponent } from './this-portfolio/this-portfolio.componen
 import { StapledHillsComponent } from './stapled-hills/stapled-hills.component';
 import { BohlmanAaComponent } from './bohlman-aa/bohlman-aa.component';
 import { NtcLegoComponent } from './ntc-lego/ntc-lego.component';
+import { GenFramComponent } from './gen-fram/gen-fram.component';
 import { ErrorComponent } from './error/error.component';
 
 const routes: Routes = [
@@ -13,6 +14,7 @@ const routes: Routes = [
   { path: 'stapled-hills', component: StapledHillsComponent },
   { path: 'bohlman-aa', component: BohlmanAaComponent },
   { path: 'ntc-lego', component: NtcLegoComponent },
+  { path: 'gen-fram', component: GenFramComponent },
   { path: '**', component: ErrorComponent },
 ];
 

@@ -11,12 +11,17 @@
   },
   {
     "name": "Bohlman AA",
-    "type": "filter-other filter-website",
+    "type": "filter-logo filter-website",
     "link": "bohlman-aa"
   },
   {
     "name": "NTC Lego",
     "type": "filter-website",
     "link": "ntc-lego"
+  },
+  {
+    "name": "Gen Fram",
+    "type": "filter-logo",
+    "link": "gen-fram"
   }
 ]
