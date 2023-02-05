@@ -16,6 +16,9 @@ import { StapledHillsComponent } from './stapled-hills/stapled-hills.component';
 import { BohlmanAaComponent } from './bohlman-aa/bohlman-aa.component';
 import { NtcLegoComponent } from './ntc-lego/ntc-lego.component';
 import { GenFramComponent } from './gen-fram/gen-fram.component';
+import { TemplatesComponent } from './templates/templates.component';
+import { PhotographyPortfolioComponent } from './photography-portfolio/photography-portfolio.component';
+import { ContactSmallComponent } from './contact-small/contact-small.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +36,9 @@ import { GenFramComponent } from './gen-fram/gen-fram.component';
     BohlmanAaComponent,
     NtcLegoComponent,
     GenFramComponent,
+    TemplatesComponent,
+    PhotographyPortfolioComponent,
+    ContactSmallComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

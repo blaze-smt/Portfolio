@@ -1,0 +1,13 @@
+.templates {
+  display: flex;
+  flex-direction: column;
+  .template-wrapper {
+    width: 100%;
+    margin-top: 36px;
+    .template-list {
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+    }
+  }
+}

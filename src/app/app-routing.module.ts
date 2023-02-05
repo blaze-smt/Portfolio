@@ -7,6 +7,7 @@ import { BohlmanAaComponent } from './bohlman-aa/bohlman-aa.component';
 import { NtcLegoComponent } from './ntc-lego/ntc-lego.component';
 import { GenFramComponent } from './gen-fram/gen-fram.component';
 import { ErrorComponent } from './error/error.component';
+import { PhotographyPortfolioComponent } from './photography-portfolio/photography-portfolio.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -15,6 +16,7 @@ const routes: Routes = [
   { path: 'bohlman-aa', component: BohlmanAaComponent },
   { path: 'ntc-lego', component: NtcLegoComponent },
   { path: 'gen-fram', component: GenFramComponent },
+  { path: 'photography-portfolio', component: PhotographyPortfolioComponent },
   { path: '**', component: ErrorComponent },
 ];
 

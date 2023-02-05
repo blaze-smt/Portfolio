@@ -5,51 +5,6 @@
 .works {
   display: flex;
   flex-direction: column;
-  .filters {
-    position: relative;
-    display: flex;
-    padding-left: 0;
-    translate: -14px;
-    :not(:last-child) {
-      &::after {
-        position: absolute;
-        content: "/";
-        top: 5px;
-      }
-    }
-    .filter-item {
-      list-style-type: none;
-      .filter-btn {
-        position: relative;
-        color: #232323;
-        font-size: 20px;
-        margin: 0 0.7rem;
-        border: none;
-        background: none;
-        &::after {
-          content: "";
-          position: absolute;
-          height: 2px;
-          bottom: -4px;
-          margin: 0 auto;
-          left: 0;
-          right: 0;
-          width: 0%;
-          background: #232323;
-          transition: width ease-in 100ms;
-        }
-        &:hover,
-        &:active {
-          &::after {
-            width: 90%;
-          }
-        }
-      }
-      .active {
-        font-weight: 700;
-      }
-    }
-  }
   .projects-wrapper {
     width: 100%;
     margin-top: 36px;
@@ -95,22 +50,6 @@
 
 @media screen and (max-width: breakpoint-min(sm, $grid-breakpoints)) {
   // <576px
-  .works {
-    .filters {
-      translate: -4px;
-      :not(:last-child) {
-        &::after {
-          top: 1px;
-        }
-      }
-      .filter-item {
-        .filter-btn {
-          font-size: 16px;
-          margin: 0 0.2rem;
-        }
-      }
-    }
-  }
 }
 
 @media screen and (max-width: 258px) {

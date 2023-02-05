@@ -5,31 +5,31 @@ import {
   ElementRef,
   QueryList,
 } from '@angular/core';
-import worksData from './works.json';
+import productsData from './templates.json';
 
-interface Works {
+interface Products {
   name: String;
   type: String;
   link: String;
 }
 
 @Component({
-  selector: 'app-works',
-  templateUrl: './works.component.html',
-  styleUrls: ['./works.component.scss'],
+  selector: 'app-templates',
+  templateUrl: './templates.component.html',
+  styleUrls: ['./templates.component.scss'],
 })
-export class WorksComponent implements OnInit {
-  works: Works[] = worksData;
-  filteredWorks: Works[] = this.works;
+export class TemplatesComponent implements OnInit {
+  products: Products[] = productsData;
+  filteredProducts: Products[] = this.products;
 
   // Grabs filterbtn elements
-  @ViewChildren('filterBtnWorks') filterBtns: QueryList<ElementRef>;
+  @ViewChildren('filterBtnProducts') filterBtns: QueryList<ElementRef>;
 
   constructor() {}
 
   ngOnInit(): void {}
 
-  filterWorks(event: Event): void {
+  filterProducts(event: Event): void {
     // Checks if clicked element doesn't include 'active' class
     if (!(event.target as HTMLElement).classList.value.includes('active')) {
       // Loops through filter-btn elements
@@ -62,10 +62,14 @@ export class WorksComponent implements OnInit {
       (event.target as HTMLElement).id == 'filter-all' ||
       !(event.target as HTMLElement).classList.value.includes('active')
     ) {
-      this.filteredWorks = this.works;
+      this.filteredProducts = this.products;
     } else {
       // Filter works if target id matches type in this.works
-      this.filteredWorks = this.works.filter(function (value, index, arr) {
+      this.filteredProducts = this.products.filter(function (
+        value,
+        index,
+        arr
+      ) {
         return value.type.includes((event.target as HTMLElement).id);
       });
     }
