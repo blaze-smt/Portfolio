@@ -3,5 +3,10 @@
     "name": "PHOTOGRAPHER",
     "type": "filter-portfolio",
     "link": "photography-portfolio"
+  },
+  {
+    "name": "VINTAGE",
+    "type": "filter-ecommerce",
+    "link": "vintage-ecommerce"
   }
 ]

@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json.schemastore.org/web-manifest-combined.json",
+  "name": "Blaze Smith",
+  "short_name": "Blaze Smith",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#E6E8E6",
+  "description": "I come up with contemporary design solutions that grow user interaction.",
+  "icons": [
+    {
+      "src": "./bohlmanaa-header.jpg",
+      "sizes": "1296x624",
+      "type": "image/png"
+    },
+    {
+      "src": "./genfram-header.jpg",
+      "sizes": "1296x624",
+      "type": "image/png"
+    },
+    {
+      "src": "./ntclego-header.jpg",
+      "sizes": "1296x624",
+      "type": "image/png"
+    },
+    {
+      "src": "./photography-header.jpg",
+      "sizes": "1296x624",
+      "type": "image/png"
+    },
+    {
+      "src": "./portfolio-header.jpg",
+      "sizes": "1296x624",
+      "type": "image/png"
+    },
+    {
+      "src": "./stapledhills-header.jpg",
+      "sizes": "1296x624",
+      "type": "image/png"
+    },
+    {
+      "src": "./side-profile.jpg",
+      "sizes": "750x750",
+      "type": "image/png"
+    },
+    {
+      "src": "./favicon.ico",
+      "sizes": "50x50",
+      "type": "image/x-icon"
+    }
+  ]
+}

@@ -8,6 +8,7 @@ import { NtcLegoComponent } from './ntc-lego/ntc-lego.component';
 import { GenFramComponent } from './gen-fram/gen-fram.component';
 import { ErrorComponent } from './error/error.component';
 import { PhotographyPortfolioComponent } from './photography-portfolio/photography-portfolio.component';
+import { VintageEcommerceComponent } from './vintage-ecommerce/vintage-ecommerce.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -17,6 +18,7 @@ const routes: Routes = [
   { path: 'ntc-lego', component: NtcLegoComponent },
   { path: 'gen-fram', component: GenFramComponent },
   { path: 'photography-portfolio', component: PhotographyPortfolioComponent },
+  { path: 'vintage-ecommerce', component: VintageEcommerceComponent },
   { path: '**', component: ErrorComponent },
 ];
 

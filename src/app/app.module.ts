@@ -19,6 +19,7 @@ import { GenFramComponent } from './gen-fram/gen-fram.component';
 import { TemplatesComponent } from './templates/templates.component';
 import { PhotographyPortfolioComponent } from './photography-portfolio/photography-portfolio.component';
 import { ContactSmallComponent } from './contact-small/contact-small.component';
+import { VintageEcommerceComponent } from './vintage-ecommerce/vintage-ecommerce.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import { ContactSmallComponent } from './contact-small/contact-small.component';
     TemplatesComponent,
     PhotographyPortfolioComponent,
     ContactSmallComponent,
+    VintageEcommerceComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

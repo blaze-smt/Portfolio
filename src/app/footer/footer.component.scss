@@ -5,12 +5,14 @@
   .social-media-icons {
     margin: 25px 36px;
     cursor: pointer;
-    path {
+    path,
+    circle {
       fill: #232323;
       transition: all ease-in-out 150ms;
     }
     &:hover {
-      path {
+      path,
+      circle {
         fill: url("#radial");
       }
     }
