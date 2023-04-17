@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,gBAAgB,CAAC;EACf,UAAU,EAAE,IAAI;CAYjB;;AAbD,AAEE,gBAFc,CAEd,aAAa,CAAC;EACZ,SAAS,EAAE,IAAI;CAShB;;AAZH,AAKM,gBALU,CAEd,aAAa,CAEX,YAAY,CACV,CAAC,CAAC;EACA,SAAS,EAAE,IAAI;CAChB;;AAPP,AAQM,gBARU,CAEd,aAAa,CAEX,YAAY,AAIT,OAAO,CAAC;EACP,MAAM,EAAE,GAAG;CACZ",
+    "sources": [
+        "contact-small.component.scss"
+    ],
+    "names": [],
+    "file": "contact-small.component.css"
+}

@@ -3,7 +3,7 @@
 @import "../../../node_modules/bootstrap/scss/mixins";
 
 nav {
-  background-color: #e6e8e6;
+  background-color: #fff;
   font-weight: bold;
   width: 100%;
   border-bottom: 1px solid #232323;
@@ -130,7 +130,7 @@ nav {
     right: 0;
     top: -1px;
     padding: var(--nav-height, 80px) var(--bs-gutter-x, 20px) 16px;
-    background: #e6e8e6;
+    background: #fff;
     border: 1px solid #232323;
     transition: 120ms padding ease-in-out;
     z-index: 1;

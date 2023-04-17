@@ -13,13 +13,15 @@
   cursor: pointer;
 }
 
-.social-media .social-media-icons path {
+.social-media .social-media-icons path,
+.social-media .social-media-icons circle {
   fill: #232323;
   -webkit-transition: all ease-in-out 150ms;
   transition: all ease-in-out 150ms;
 }
 
-.social-media .social-media-icons:hover path {
+.social-media .social-media-icons:hover path,
+.social-media .social-media-icons:hover circle {
   fill: url("#radial");
 }
 

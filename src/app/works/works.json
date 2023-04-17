@@ -23,5 +23,20 @@
     "name": "Gen Fram",
     "type": "filter-logo",
     "link": "gen-fram"
+  },
+  {
+    "name": "PHOTOGRAPHER",
+    "type": "filter-website",
+    "link": "photography-portfolio"
+  },
+  {
+    "name": "VINTAGE STORE",
+    "type": "ffilter-website",
+    "link": "vintage-ecommerce"
+  },
+  {
+    "name": "ROCK CLIMBER",
+    "type": "filter-website",
+    "link": "rock-climbing-portfolio"
   }
 ]

@@ -9,6 +9,7 @@ import { GenFramComponent } from './gen-fram/gen-fram.component';
 import { ErrorComponent } from './error/error.component';
 import { PhotographyPortfolioComponent } from './photography-portfolio/photography-portfolio.component';
 import { VintageEcommerceComponent } from './vintage-ecommerce/vintage-ecommerce.component';
+import { RockClimbingComponent } from './rock-climbing/rock-climbing.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -19,6 +20,7 @@ const routes: Routes = [
   { path: 'gen-fram', component: GenFramComponent },
   { path: 'photography-portfolio', component: PhotographyPortfolioComponent },
   { path: 'vintage-ecommerce', component: VintageEcommerceComponent },
+  { path: 'rock-climbing-portfolio', component: RockClimbingComponent },
   { path: '**', component: ErrorComponent },
 ];
 
