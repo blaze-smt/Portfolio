@@ -9,7 +9,6 @@
 html {
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
-  font-size: 20 px;
   scroll-behavior: smooth;
   border: 1px solid #232323;
   background-color: #fff;
@@ -19,6 +18,7 @@ html {
 html,
 body {
   overflow-x: hidden;
+  background-color: #fff;
 }
 
 body {

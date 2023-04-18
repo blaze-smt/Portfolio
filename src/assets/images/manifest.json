@@ -4,7 +4,7 @@
   "short_name": "Blaze Smith",
   "start_url": ".",
   "display": "standalone",
-  "background_color": "#E6E8E6",
+  "background_color": "#fff",
   "description": "I come up with contemporary design solutions that grow user interaction.",
   "icons": [
     {

@@ -1,5 +1,5 @@
 nav {
-  background-color: #e6e8e6;
+  background-color: #fff;
   font-weight: bold;
   width: 100%;
   border-bottom: 1px solid #232323;
@@ -11,8 +11,8 @@ nav .inner-container {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 nav .navbar-toggler {
@@ -23,10 +23,12 @@ nav .navbar-toggler {
   margin: -3px;
 }
 
-nav .navbar-toggler:focus, nav .navbar-toggler:hover, nav .navbar-toggler:active {
+nav .navbar-toggler:focus,
+nav .navbar-toggler:hover,
+nav .navbar-toggler:active {
   outline: 0 !important;
   -webkit-box-shadow: none !important;
-          box-shadow: none !important;
+  box-shadow: none !important;
 }
 
 nav .navbar-toggler .navbar-toggler-icon {
@@ -49,8 +51,8 @@ nav .navbar-toggler .navbar-toggler-icon i {
 
 nav .collapse {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 50%;
-          flex: 0 0 50%;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
   width: 50%;
 }
 
@@ -61,8 +63,8 @@ nav .collapse .navbar-wrapper {
 nav .collapse .navbar-wrapper .navbar-nav {
   width: 100%;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 nav .collapse .navbar-wrapper .navbar-nav .nav-item {
@@ -70,8 +72,8 @@ nav .collapse .navbar-wrapper .navbar-nav .nav-item {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   position: relative;
   margin: 0 10px;
 }
@@ -91,11 +93,11 @@ nav .collapse .navbar-wrapper .navbar-nav .last {
 
 .navbar-shown .navbar-toggler-icon i:first-child {
   -webkit-transform: rotate(45deg) translate(3.5px, 3.5px);
-          transform: rotate(45deg) translate(3.5px, 3.5px);
+  transform: rotate(45deg) translate(3.5px, 3.5px);
 }
 
 .navbar-shown .navbar-toggler-icon i:last-child {
   -webkit-transform: rotate(-45deg) translate(1px, -1px);
-          transform: rotate(-45deg) translate(1px, -1px);
+  transform: rotate(-45deg) translate(1px, -1px);
 }
 /*# sourceMappingURL=navbar.component.css.map */
