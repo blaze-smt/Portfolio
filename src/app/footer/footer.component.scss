@@ -1,3 +1,7 @@
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+
 .social-media {
   display: flex;
   justify-content: center;
@@ -53,4 +57,48 @@
       }
     }
   }
+}
+
+@media screen and (min-width: breakpoint-min(xxl, $grid-breakpoints)) {
+  // >=1400px
+}
+
+@media screen and (min-width: 1900px) {
+  // >= 1900px
+}
+
+@media screen and (min-width: 2500px) {
+  // >=2500px
+}
+
+@media screen and (max-width: breakpoint-min(xxl, $grid-breakpoints)) {
+  // <1400px
+}
+
+@media screen and (max-width: 1250px) {
+  // <= 1250px
+}
+
+@media screen and (max-width: breakpoint-min(xl, $grid-breakpoints)) {
+  // <1200px
+}
+
+@media screen and (max-width: breakpoint-min(lg, $grid-breakpoints)) {
+  // <992px
+}
+
+@media screen and (max-width: breakpoint-max(md, $grid-breakpoints)) {
+  // <768px
+}
+
+@media screen and (max-width: breakpoint-min(sm, $grid-breakpoints)) {
+  // <576px
+  .social-media {
+    .social-media-icons {
+      margin: 25px 26px;
+    }
+  }
+}
+
+@media screen and (max-width: 258px) {
 }
