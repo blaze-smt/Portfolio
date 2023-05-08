@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { GenFramComponent } from './gen-fram.component';
+import { SocialsComponent } from './socials.component';
 
-describe('GenFramComponent', () => {
-  let component: GenFramComponent;
-  let fixture: ComponentFixture<GenFramComponent>;
+describe('SocialsComponent', () => {
+  let component: SocialsComponent;
+  let fixture: ComponentFixture<SocialsComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ GenFramComponent ]
+      declarations: [ SocialsComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(GenFramComponent);
+    fixture = TestBed.createComponent(SocialsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

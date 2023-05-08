@@ -2,36 +2,22 @@
 @import "node_modules/bootstrap/scss/variables";
 @import "node_modules/bootstrap/scss/mixins";
 
-.bottom {
+.social-media {
+  display: flex;
+  justify-content: center;
   margin: 0;
-  .bottom-wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    #copyright {
-      font-style: normal;
-      margin: 8px 0;
+  .social-media-icons {
+    margin: 25px 36px;
+    cursor: pointer;
+    path,
+    circle {
+      fill: #232323;
+      transition: all ease-in-out 150ms;
     }
-    #top-btn {
-      position: relative;
-      cursor: pointer;
-      &::after {
-        content: "";
-        position: absolute;
-        height: 1px;
-        bottom: 3px;
-        margin: 0 auto;
-        left: 0;
-        right: 0;
-        width: 0%;
-        background: #232323;
-        transition: width ease-in 100ms;
-      }
-      &:hover,
-      &:active {
-        &::after {
-          width: 90%;
-        }
+    &:hover {
+      path,
+      circle {
+        fill: url("#radial");
       }
     }
   }
@@ -71,6 +57,11 @@
 
 @media screen and (max-width: breakpoint-min(sm, $grid-breakpoints)) {
   // <576px
+  .social-media {
+    .social-media-icons {
+      margin: 25px 26px;
+    }
+  }
 }
 
 @media screen and (max-width: 258px) {

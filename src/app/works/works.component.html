@@ -63,7 +63,8 @@
           <a
             *ngFor="let work of filteredWorks"
             class="btn-a btn-special"
-            routerLink="/{{ work.link }}"
+            href="{{ work.link }}"
+            target="_blank"
           >
             <span>{{ work.name }}</span>
           </a>

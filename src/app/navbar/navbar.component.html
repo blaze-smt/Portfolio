@@ -1,7 +1,12 @@
 <nav id="nav" class="navbar navbar-expand-md">
   <div class="container">
     <div class="inner-container">
-      <a class="navbar-brand nav-hover-underline" routerLink="/">BLAZE SMITH</a>
+      <a
+        class="navbar-brand nav-hover-underline"
+        routerLink="/"
+        [ngClass]="status ? '' : 'navbar-shown'"
+        >BLAZE SMITH</a
+      >
       <button
         class="navbar-toggler"
         type="button"
@@ -13,7 +18,9 @@
         aria-label="Toggle navigation"
         #togglerText
       >
-        <span class="navbar-toggler-icon" #togglerIcon><i></i><i></i></span>
+        <span class="navbar-toggler-icon" #togglerIcon
+          ><i #i1></i><i #i2></i
+        ></span>
       </button>
       <div
         class="collapse navbar-collapse"

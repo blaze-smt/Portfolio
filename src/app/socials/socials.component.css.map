@@ -2,8 +2,8 @@
     "version": 3,
     "mappings": "",
     "sources": [
-        "stapled-hills.component.scss"
+        "socials.component.scss"
     ],
     "names": [],
-    "file": "stapled-hills.component.css"
+    "file": "socials.component.css"
 }

@@ -17,6 +17,8 @@ import { DOCUMENT } from '@angular/common';
 export class NavbarComponent implements OnInit {
   @ViewChild('togglerText') togglerText: ElementRef;
   @ViewChild('togglerIcon') togglerIcon: ElementRef;
+  @ViewChild('i1') i1: ElementRef;
+  @ViewChild('i2') i2: ElementRef;
   @ViewChild('navbarMobile') navbarMobile: ElementRef;
 
   constructor(
@@ -28,9 +30,12 @@ export class NavbarComponent implements OnInit {
       if (
         e.target !== this.togglerText.nativeElement &&
         e.target !== this.togglerIcon.nativeElement &&
+        e.target !== this.i1.nativeElement &&
+        e.target !== this.i2.nativeElement &&
         e.target !== this.navbarMobile.nativeElement
       ) {
         this.status = true;
+        console.log('click');
       }
     });
   }

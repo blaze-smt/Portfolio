@@ -20,6 +20,7 @@ nav {
     align-items: center;
     padding-left: 10px;
     padding-right: 10px;
+    z-index: 2;
   }
   .nav-hover-underline {
     position: relative;
@@ -123,6 +124,9 @@ nav {
   .navbar-collapse:not(.show) {
     display: block;
     left: 100%;
+  }
+  .navbar-shown {
+    color: #fff;
   }
   .navbar-collapse {
     position: absolute;
