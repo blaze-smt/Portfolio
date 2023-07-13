@@ -1,5 +1,10 @@
 [
   {
+    "name": "ERICJKUNDINGER",
+    "type": "filter-website",
+    "link": "https://www.ericjkundinger.com/"
+  },
+  {
     "name": "ROCK CLIMBER",
     "type": "filter-website",
     "link": "https://dribbble.com/shots/21226207-ROCK-CLIMBER-PORTFOLIO-WEBSITE"
@@ -17,7 +22,7 @@
   {
     "name": "Gen Fram",
     "type": "filter-logo",
-    "link": "https://dribbble.com/shots/20518322-2023-GEN-FRAM-LOGOS"
+    "link": "https://dribbble.com/shots/21940251-Gen-Fram-Logo-Exploration"
   },
   {
     "name": "NTC Lego",

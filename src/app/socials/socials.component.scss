@@ -14,7 +14,9 @@
       fill: #232323;
       transition: all ease-in-out 150ms;
     }
-    &:hover {
+  }
+  a:hover {
+    .social-media-icons {
       path,
       circle {
         fill: url("#radial");
