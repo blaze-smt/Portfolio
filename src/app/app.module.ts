@@ -10,6 +10,7 @@ import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { SocialsComponent } from './socials/socials.component';
+import { HeroComponent } from './hero/hero.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { SocialsComponent } from './socials/socials.component';
     FooterComponent,
     HomeComponent,
     SocialsComponent,
+    HeroComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
