@@ -1,13 +1,11 @@
 *,
 *::before,
 *::after {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   font-family: CabinetGrotesk-Variable;
 }
 
 html {
-  -webkit-box-sizing: inherit;
   box-sizing: inherit;
   scroll-behavior: smooth;
   border: 1px solid #232323;
@@ -35,5 +33,4 @@ section,
 footer,
 .copyright {
   border-top: 1px solid #232323;
-}
-/*# sourceMappingURL=defaults.css.map */
+}/*# sourceMappingURL=defaults.css.map */
