@@ -2,34 +2,37 @@
   "selfImprovement": [
     {
       "name": "Ikigai. Finding life purpose from residents in Okinawa Japan",
-      "link": "/"
+      "link": "https://www.amazon.com/Ikigai-Japanese-Secret-Long-Happy/dp/0143130722/ref=sr_1_1?crid=HJO6IPAG1AGN&amp;keywords=ikigai&amp;qid=1694542359&amp;sprefix=ikigai%252Caps%252C156&amp;sr=8-1&_encoding=UTF8&tag=blazesmith-20&linkCode=ur2&linkId=d0e2d3ff428e6e59c05cee8b875a5578&camp=1789&creative=9325"
     },
     {
       "name": "Atomic Habits. How to build positive habits and destroy negative habits",
-      "link": "/"
+      "link": "https://www.amazon.com/Atomic-Habits-Proven-Build-Break/dp/0735211299/ref=tmm_hrd_swatch_0?_encoding=UTF8&amp;qid=1694542430&amp;sr=8-1&_encoding=UTF8&tag=blazesmith-20&linkCode=ur2&linkId=5d816e509c476dd23805230cc4a65730&camp=1789&creative=9325"
     },
-    { "name": "Models. Building confidence as a man", "link": "/" }
+    {
+      "name": "Models. Building confidence as a man",
+      "link": "https://www.amazon.com/Models-Attract-Women-Through-Honesty/dp/1463750358/ref=tmm_pap_swatch_0?_encoding=UTF8&amp;qid=1694542482&amp;sr=8-1&_encoding=UTF8&tag=blazesmith-20&linkCode=ur2&linkId=e729b1b4f671204e50e99faa90d3524f&camp=1789&creative=9325"
+    }
   ],
   "creativity": [
     {
       "name": "The Creative Act: A Way of Being. Methodology to channel inner creative ideas",
-      "link": "/"
+      "link": "https://www.amazon.com/Creative-Act-Way-Being/dp/0593652886/ref=tmm_hrd_swatch_0?_encoding=UTF8&amp;qid=1694542522&amp;sr=8-1&_encoding=UTF8&tag=blazesmith-20&linkCode=ur2&linkId=c60fd2880d9bbf072fe2305348b9f51b&camp=1789&creative=9325"
     },
     {
       "name": "The War of Art. Resistances and how they affect your work",
-      "link": "/"
+      "link": "https://www.amazon.com/War-Art-Through-Creative-Battles/dp/1936891026/ref=tmm_pap_swatch_0?_encoding=UTF8&amp;qid=1694542653&amp;sr=8-1&_encoding=UTF8&tag=blazesmith-20&linkCode=ur2&linkId=cde880a454c8d754f8db1366925ac349&camp=1789&creative=9325"
     }
   ],
   "spiritual": [
     {
       "name": "The Power of Now. Ways to tap into mindfulness and self reflection",
-      "link": "/"
+      "link": "https://www.amazon.com/Power-Now-Guide-Spiritual-Enlightenment/dp/1577314808/ref=tmm_pap_swatch_0?_encoding=UTF8&amp;qid=1694542737&amp;sr=8-1&_encoding=UTF8&tag=blazesmith-20&linkCode=ur2&linkId=c075b3a36413dc2d4eaabdd546c8cc2a&camp=1789&creative=9325"
     }
   ],
   "financial": [
     {
       "name": "Rich Dad Poor Dad. Wealth mindset and a beginners look into real estate",
-      "link": "/"
+      "link": "https://www.amazon.com/Rich-Dad-Poor-Teach-Middle/dp/1612681131/ref=sr_1_1?crid=2JA48EDXQI226&amp;keywords=rich+dad+poor+dad&amp;qid=1694542852&amp;sprefix=rich+dad+poor+da%252Caps%252C127&amp;sr=8-1&_encoding=UTF8&tag=blazesmith-20&linkCode=ur2&linkId=5db4ea3c37e20bf7000aa8ba2189a14c&camp=1789&creative=9325"
     }
   ]
 }
