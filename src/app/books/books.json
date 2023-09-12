@@ -1,0 +1,35 @@
+{
+  "selfImprovement": [
+    {
+      "name": "Ikigai. Finding life purpose from residents in Okinawa Japan",
+      "link": "/"
+    },
+    {
+      "name": "Atomic Habits. How to build positive habits and destroy negative habits",
+      "link": "/"
+    },
+    { "name": "Models. Building confidence as a man", "link": "/" }
+  ],
+  "creativity": [
+    {
+      "name": "The Creative Act: A Way of Being. Methodology to channel inner creative ideas",
+      "link": "/"
+    },
+    {
+      "name": "The War of Art. Resistances and how they affect your work",
+      "link": "/"
+    }
+  ],
+  "spiritual": [
+    {
+      "name": "The Power of Now. Ways to tap into mindfulness and self reflection",
+      "link": "/"
+    }
+  ],
+  "financial": [
+    {
+      "name": "Rich Dad Poor Dad. Wealth mindset and a beginners look into real estate",
+      "link": "/"
+    }
+  ]
+}

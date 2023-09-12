@@ -2,26 +2,56 @@
 @import "node_modules/bootstrap/scss/variables";
 @import "node_modules/bootstrap/scss/mixins";
 
-.hero {
-  border-top: none;
-  margin: 60px 0;
-}
-
-.display-wrapper,
-.hero-text,
-.text-wrappers {
+.books-wrapper {
+  margin: 60px auto;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  h5 {
+    margin: 24px 0 0 0;
+    font-size: 1rem;
+    font-weight: 200;
+  }
 }
 
-.hero-text {
-  gap: 32px;
-  margin-top: 24px;
+.book-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
 }
 
-.text-wrappers span:last-child {
-  font-weight: normal;
+.book-link {
+  position: relative;
+  color: #232323;
+  font-size: 1.5rem;
+  text-decoration: none;
+  &::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    bottom: 1px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: #232323;
+    transition: width ease-in-out 65ms;
+  }
+  &:hover,
+  &:active {
+    color: transparent;
+    background: radial-gradient(
+      rgba(92, 120, 150, 100),
+      rgba(48, 111, 178, 0.6),
+      rgba(34, 107, 184, 0.43),
+      rgba(92, 120, 150, 0.33)
+    );
+    background-clip: text;
+    &::after {
+      width: 0;
+    }
+  }
 }
 
 @media screen and (min-width: breakpoint-min(xxl, $grid-breakpoints)) {
@@ -50,6 +80,17 @@
 
 @media screen and (max-width: breakpoint-min(lg, $grid-breakpoints)) {
   // <992px
+
+  .book-list {
+    gap: 24px;
+  }
+
+  .book-link {
+    text-decoration: underline;
+    &::after {
+      display: none;
+    }
+  }
 }
 
 @media screen and (max-width: breakpoint-max(md, $grid-breakpoints)) {
