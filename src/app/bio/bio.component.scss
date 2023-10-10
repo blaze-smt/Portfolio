@@ -2,6 +2,10 @@
 @import "node_modules/bootstrap/scss/variables";
 @import "node_modules/bootstrap/scss/mixins";
 
+.section-wrapper.bio {
+  padding: 0;
+}
+
 .bio {
   display: flex;
   flex-direction: row;
