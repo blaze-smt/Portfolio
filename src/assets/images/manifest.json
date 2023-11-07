@@ -8,14 +8,9 @@
   "description": "I come up with contemporary design solutions that grow user interaction.",
   "icons": [
     {
-      "src": "./side-profile.jpg",
+      "src": "./blaze-profile.webp",
       "sizes": "750x750",
-      "type": "image/png"
-    },
-    {
-      "src": "./favicon.ico",
-      "sizes": "50x50",
-      "type": "image/x-icon"
+      "type": "image/webp"
     }
   ]
 }

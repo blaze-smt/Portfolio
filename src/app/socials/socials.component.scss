@@ -13,10 +13,10 @@
   .icon-wrapper {
     display: flex;
     justify-content: flex-start;
-    margin-left: -36px;
+    margin: 1rem 0;
+    gap: 2rem;
   }
   .social-media-icons {
-    margin: 25px 36px;
     cursor: pointer;
     path,
     circle {
@@ -70,13 +70,6 @@
   // <576px
   .social-media {
     justify-items: center;
-    .icon-wrapper {
-      margin: 0;
-      justify-content: center;
-    }
-    .social-media-icons {
-      margin: 25px 26px;
-    }
   }
 }
 

@@ -1,22 +1,17 @@
 [
   {
+    "name": "Gen Fram",
+    "type": "filter-website filter-logo",
+    "link": "https://www.genfram.com/post/gen-fram"
+  },
+  {
     "name": "ERICJKUNDINGER",
     "type": "filter-website",
     "link": "https://www.ericjkundinger.com/"
   },
   {
-    "name": "Gen Fram",
-    "type": "filter-website filter-logo",
-    "link": "https://www.genfram.com/"
-  },
-  {
     "name": "Bohlman AA",
     "type": "filter-logo filter-website",
     "link": "https://bohlmanauto.com/"
-  },
-  {
-    "name": "Stapled Hills",
-    "type": "filter-clothing filter-website",
-    "link": "https://stapledhills.com/"
   }
 ]
