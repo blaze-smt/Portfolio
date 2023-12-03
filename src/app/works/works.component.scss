@@ -16,6 +16,11 @@
   }
 }
 
+.projects-bubble {
+  font-size: 2.5rem;
+  white-space: nowrap;
+}
+
 @media screen and (min-width: breakpoint-min(xxl, $grid-breakpoints)) {
   // >=1400px
 }
@@ -50,6 +55,9 @@
 
 @media screen and (max-width: breakpoint-min(sm, $grid-breakpoints)) {
   // <576px
+  .projects-bubble {
+    font-size: 2rem;
+  }
 }
 
 @media screen and (max-width: 258px) {

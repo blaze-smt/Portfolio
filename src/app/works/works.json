@@ -1,5 +1,10 @@
 [
   {
+    "name": "Stuart Blue Films",
+    "type": "filter-website",
+    "link": "https://stuartbluefilms.com/"
+  },
+  {
     "name": "Gen Fram",
     "type": "filter-website filter-logo",
     "link": "https://www.genfram.com/post/gen-fram"
@@ -10,7 +15,7 @@
     "link": "https://www.ericjkundinger.com/"
   },
   {
-    "name": "Bohlman AA",
+    "name": "Bohlman Auto",
     "type": "filter-logo filter-website",
     "link": "https://bohlmanauto.com/"
   }
