@@ -11,8 +11,6 @@ import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { SocialsComponent } from './socials/socials.component';
 import { HeroComponent } from './hero/hero.component';
-import { BooksComponent } from './books/books.component';
-import { CreativesComponent } from './creatives/creatives.component';
 
 @NgModule({
   declarations: [
@@ -25,8 +23,6 @@ import { CreativesComponent } from './creatives/creatives.component';
     HomeComponent,
     SocialsComponent,
     HeroComponent,
-    BooksComponent,
-    CreativesComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

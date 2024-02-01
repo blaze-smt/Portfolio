@@ -35,7 +35,6 @@ export class NavbarComponent implements OnInit {
         e.target !== this.navbarMobile.nativeElement
       ) {
         this.status = true;
-        console.log('click');
       }
     });
   }
