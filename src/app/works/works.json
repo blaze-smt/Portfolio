@@ -1,5 +1,10 @@
 [
   {
+    "name": "emptyspace.photo",
+    "type": "filter-website",
+    "link": "https://emptyspace.photo/"
+  },
+  {
     "name": "NDA",
     "type": "filter-website",
     "link": "https://nda.dev/"
@@ -12,7 +17,7 @@
   {
     "name": "Gen Fram",
     "type": "filter-website filter-logo",
-    "link": "https://www.genfram.com/post/gen-fram"
+    "link": "https://www.genfram.com/"
   },
   {
     "name": "ERICJKUNDINGER",
