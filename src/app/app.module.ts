@@ -11,6 +11,7 @@ import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { SocialsComponent } from './socials/socials.component';
 import { HeroComponent } from './hero/hero.component';
+import { TestimonialsComponent } from './testimonials/testimonials.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { HeroComponent } from './hero/hero.component';
     HomeComponent,
     SocialsComponent,
     HeroComponent,
+    TestimonialsComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

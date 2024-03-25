@@ -1,0 +1,30 @@
+<section id="testimonials">
+  <div class="container">
+    <div class="section-wrapper testimonials">
+      <div class="testimonials-header">
+        <h3>TESTIMONIALS</h3>
+        <div class="testimonial-wrapper">
+          <div class="testimonials-list" id="testimonials-list">
+            <div
+              class="testimonial-review"
+              *ngFor="let testimonial of testimonials"
+            >
+              <img
+                class="testimonial-image"
+                [src]="'assets/images/' + testimonial.image"
+              />
+              <div class="testimonial-text-wrapper">
+                <span class="testimonial-name">
+                  {{ testimonial.name }}
+                </span>
+                <span class="testimonial-review"
+                  >" {{ testimonial.review }} "</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
