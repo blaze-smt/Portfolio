@@ -19,7 +19,8 @@
 }
 
 .testimonial-image {
-  height: 100px;
+  max-height: 100px;
+  max-width: 100px;
   border-radius: 100px;
   filter: grayscale(100%);
 }
@@ -71,6 +72,9 @@
 
 @media screen and (max-width: breakpoint-min(sm, $grid-breakpoints)) {
   // <576px
+  .testimonial-review {
+    flex-direction: column;
+  }
 }
 
 @media screen and (max-width: 258px) {
