@@ -1,1 +1,11 @@
-/*# sourceMappingURL=app.component.css.map */
+.trail {
+  position: absolute;
+  border-radius: 100%;
+  width: 12px;
+  height: 12px;
+  background-color: #ffffff;
+  pointer-events: none;
+  z-index: 1000;
+  mix-blend-mode: difference;
+  pointer-events: none;
+}/*# sourceMappingURL=app.component.css.map */

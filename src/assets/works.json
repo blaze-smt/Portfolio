@@ -1,0 +1,300 @@
+[
+  {
+    "name": "emptyspace.photo",
+    "type": "filter-website",
+    "link": "/emptyspace-photo",
+    "linkName": "www.emptyspace.photo",
+    "href": "https://emptyspace.photo/",
+
+    "description": "A minimalist photography portfolio leveraging Kirby 4 CMS. The design is intentionally sparse, drawing attention to the high-quality images and ease of navigation through ample whitespace.\nKirby 4's file-based system ensures resiliency for seamless content updates and tailored presentations. Design, development, and photography were done by me.",
+
+    "services": ["Photography", "UX/UI", "Development"],
+    "thumbnail": {
+      "src": "assets/images/empty-space/nevermind.webp",
+      "alt": "A man floating underwater like the Nirvana Nevermind album cover. This image was shot with an underwater film camera."
+    },
+    "problem": {
+      "heading": "Creating a visually compelling experience",
+      "desc": "In the realm of photography, the challenge lies not only in capturing stunning images but also in presenting them in a way that is both engaging and reflective of the photographer's unique style. A photography portfolio website must not only showcase the technical skill and creative vision of the photographer but also provide a seamless, intuitive user experience that draws viewers in and holds their attention. The design and functionality of the website must work harmoniously to create a visually compelling platform that enhances the photographs and communicates the photographer's professional identity effectively.",
+      "images": [
+        {
+          "src": "assets/images/empty-space/exploration.webp",
+          "alt": "Design process exploration."
+        },
+        {
+          "src": "assets/images/empty-space/palette.webp",
+          "alt": "Season color changing palette."
+        }
+      ]
+    },
+    "solution": {
+      "heading": "Minimal aesthetic, seamless client-side interface",
+      "desc": "Kirby 4's flexibility and performance, combined with a minimalist design approach, create a platform where visuals take center stage, offering visitors a cohesive and immersive viewing experience.",
+      "images": [
+        {
+          "src": "assets/images/empty-space/desk-1.webp",
+          "alt": "Website desktop landing screen."
+        },
+        {
+          "src": "assets/images/empty-space/desk-2.webp",
+          "alt": "Website heading difference effect."
+        },
+        {
+          "src": "assets/images/empty-space/mobile-1.webp",
+          "alt": "Mobile landing screen."
+        },
+        {
+          "src": "assets/images/empty-space/kirby.webp",
+          "alt": "Kirby 4 CMS client side screen"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Newberry Development Associates",
+    "type": "filter-website",
+    "link": "/nda",
+    "href": "https://nda.dev/",
+    "linkName": "www.nda.dev",
+    "description": "Newberry Development Associates constructs platforms in the digital space. This website features dynamic navigation with dark and light mode styles. A design system was created on top of this to establish a clear path for website expansion into future plans. The Kirby 4 CMS ensures simple client-sided updates to give emphasis on the idea of growth.",
+    "services": ["UX/UI", "Development"],
+    "thumbnail": {
+      "src": "assets/images/nda/nda-thumb.webp",
+      "alt": "NDA.dev light mode and dark mode page."
+    },
+    "problem": {
+      "heading": "Establishing a web presence and opening up for growth",
+      "desc": "By implementing a versatile design system, the website is equipped to adapt and evolve, accommodating new content and features as the developer's portfolio grows. This strategic approach ensures that the website can scale seamlessly, enhancing the developer's web presence and facilitating professional growth in a competitive digital landscape.",
+      "images": [
+        {
+          "src": "assets/images/nda/nda-palette.webp",
+          "alt": "Color palette"
+        },
+        {
+          "src": "assets/images/nda/nda-type.webp",
+          "alt": "Typescale"
+        },
+        {
+          "src": "assets/images/nda/nda-layout.webp",
+          "alt": "Design layout dimensions"
+        },
+        {
+          "src": "assets/images/nda/nda-elements.webp",
+          "alt": "Graphic elements"
+        },
+        {
+          "src": "assets/images/nda/nda-icons.webp",
+          "alt": "Iconography components"
+        },
+        {
+          "src": "assets/images/nda/nda-buttons.webp",
+          "alt": "Button component styles"
+        },
+        {
+          "src": "assets/images/nda/nda-cards-large.webp",
+          "alt": "Large card components"
+        },
+        {
+          "src": "assets/images/nda/nda-cards-list.webp",
+          "alt": "List card components"
+        },
+        {
+          "src": "assets/images/nda/nda-bento.webp",
+          "alt": "Bento project tile designs"
+        },
+        {
+          "src": "assets/images/nda/nda-list.webp",
+          "alt": "About section list designs"
+        },
+        {
+          "src": "assets/images/nda/nda-dividers.webp",
+          "alt": "Section dividers"
+        },
+        {
+          "src": "assets/images/nda/nda-headers.webp",
+          "alt": "Section header styles"
+        },
+        {
+          "src": "assets/images/nda/nda-nav.webp",
+          "alt": "Desktop and mobile navigation components"
+        }
+      ]
+    },
+    "solution": {
+      "heading": "A Memorable landing page",
+      "desc": "To create a memorable landing page for the developer's website, we utilized Kirby 4 CMS for its flexibility and ease of content management. Designed to captivate visitors immediately with a blend of aesthetic appeal and functional design, setting the stage for a compelling exploration of the developer's work.",
+      "images": [
+        {
+          "src": "assets/images/nda/nda-dark.webp",
+          "alt": "Desktop dark mode landing page"
+        },
+        {
+          "src": "assets/images/nda/nda-dark-mobile.webp",
+          "alt": "Mobile dark mode navigation screen"
+        },
+        {
+          "src": "assets/images/nda/nda-home.webp",
+          "alt": "Desktop landing page on light mode"
+        },
+        {
+          "src": "assets/images/nda/nda-mobile-home.webp",
+          "alt": "Mobile landing page on light mode"
+        },
+        {
+          "src": "assets/images/nda/nda-works.webp",
+          "alt": "Desktop project section"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Gen Fram",
+    "type": "filter-website",
+    "link": "/gen-fram",
+    "linkName": "www.genfram.com",
+    "href": "https://www.genfram.com/",
+    "description": "Gen Fram is a platform to view all-inclusive and contemporary standards for design. It served as a source of inspiration for designers and developers alike. Through my duration on this project, I established an identity, designed a website, and accumulated 1.6+ million views on social media (mostly TikTok). Webflow was the website builder used, which allows for an intuitive approach to blog creation.",
+    "services": ["Visual Identity", "Social Media"],
+    "thumbnail": {
+      "src": "assets/images/genfram/genfram-logo.webp",
+      "alt": "Gen Fram dark logo design"
+    },
+    "problem": {
+      "heading": "Defining a digital presence",
+      "desc": "The brand required a strong visual identity and a robust online platform, developed on Webflow, to showcase its comprehensive design ethos effectively. Additionally, the brand needed to engage and expand its audience through strategic social media content on Instagram and TikTok, platforms where visual appeal is paramount. The goal was to not only reflect the brand's commitment to design excellence but also to cultivate a community of followers who find value and inspiration in the brand's offerings.",
+      "images": [
+        {
+          "src": "assets/images/genfram/gf-moodboard.webp",
+          "alt": "Moodboard for brand direction"
+        },
+        {
+          "src": "assets/images/genfram/gf-users.webp",
+          "alt": "User personas for brand identity"
+        },
+        {
+          "src": "assets/images/genfram/gf-palette.webp",
+          "alt": "Brand color palette"
+        },
+        {
+          "src": "assets/images/genfram/gf-type.webp",
+          "alt": "Typescale for website"
+        },
+        {
+          "src": "assets/images/genfram/gf-logo.webp",
+          "alt": "Final logo design"
+        },
+        {
+          "src": "assets/images/genfram/gf-logo-color.webp",
+          "alt": "Logo over different color options"
+        },
+        {
+          "src": "assets/images/genfram/gf-logo-image.webp",
+          "alt": "Logo over AI image generation"
+        },
+        {
+          "src": "assets/images/genfram/gf-wires-mobile.webp",
+          "alt": "Mobile wireframes"
+        },
+        {
+          "src": "assets/images/genfram/gf-wires-desk.webp",
+          "alt": "Desktop wireframes"
+        }
+      ]
+    },
+    "solution": {
+      "heading": "A contemporary aesthetic",
+      "desc": "To embody a contemporary aesthetic, the brand's visual identity and Webflow-developed website were meticulously crafted to reflect cutting-edge design standards. This digital platform showcases a wide array of design inspirations, serving as a pivotal resource for both designers and developers seeking modern and inclusive design cues. The integration of visually compelling content on Instagram and TikTok further amplified the brand's reach, engaging a broader audience and fostering a community around contemporary design.",
+      "images": [
+        {
+          "src": "assets/images/genfram/gf-home-mobile.webp",
+          "alt": "Home page on mobile"
+        },
+        {
+          "src": "assets/images/genfram/gf-home-desk.webp",
+          "alt": "Home page on desktop"
+        },
+        {
+          "src": "assets/images/genfram/gf-blog-1.webp",
+          "alt": "Top of blog page template"
+        },
+        {
+          "src": "assets/images/genfram/gf-blog-2.webp",
+          "alt": "Bottom of blog page template"
+        },
+        {
+          "src": "assets/images/genfram/gf-emptyspace.webp",
+          "alt": "Empty space web page for brand aesthetic"
+        },
+        {
+          "src": "assets/images/genfram/gf-colors.webp",
+          "alt": "Website color changing options"
+        },
+        {
+          "src": "assets/images/genfram/gf-webflow.webp",
+          "alt": "Webflow blog CMS"
+        },
+        {
+          "src": "assets/images/genfram/tiktok.webp",
+          "alt": "TikTok account statistics"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Stuart Blue Films",
+    "type": "filter-website",
+    "link": "/stuart-blue",
+    "linkName": "www.stuartbluefilms.com",
+    "href": "https://stuartbluefilms.com/",
+    "description": "Stuart Blue is a filmmaker currently based in Chicago, working as a production assistant on television and movie sets in the city. His filmmaker portfolio website is a custom-designed and developed project that showcases his cinematic work using adaptive design principles and the Next.js framework with React. The website features distinct layouts optimized for various screen sizes, ensuring a tailored user experience across devices like smartphones, tablets, and desktops.",
+    "services": ["UX/UI", "Development"],
+    "thumbnail": {
+      "src": "assets/images/stuart/stuart-home.webp",
+      "alt": "StuartBlueFilms.com website home page"
+    },
+    "problem": {
+      "heading": "A portal to watch short films",
+      "desc": "The primary challenge lies in creating a user-friendly, adaptive web portal that efficiently showcases a diverse collection of short films. This platform must cater to varying user preferences and device specifications, ensuring seamless access and optimal viewing experiences across all digital environments.",
+      "images": [
+        {
+          "src": "assets/images/stuart/sb-moodboard.webp",
+          "alt": "Website moodboard"
+        },
+        {
+          "src": "assets/images/stuart/sb-exploration-mobile.webp",
+          "alt": "Mobile home screen mockup exploration"
+        },
+        {
+          "src": "assets/images/stuart/sb-exploration-bio.webp",
+          "alt": "Mobile bio screen mockup exploration"
+        },
+        {
+          "src": "assets/images/stuart/sb-exploration-desk.webp",
+          "alt": "Desktop home screen mockup exploration"
+        }
+      ]
+    },
+    "solution": {
+      "heading": "An immersive experience",
+      "desc": "Next.js and React provided an adaptive, high-performance web portal. This solution provides a responsive, device-agnostic interface that delivers an immersive and interactive viewing experience for short films, tailored to meet the needs of a broad audience spectrum.",
+      "images": [
+        {
+          "src": "assets/images/stuart/sb-mobile-home.webp",
+          "alt": "Production mobile home screen"
+        },
+        {
+          "src": "assets/images/stuart/sb-mobile-bio.webp",
+          "alt": "Production mobile bio screen"
+        },
+        {
+          "src": "assets/images/stuart/sb-desk-home.webp",
+          "alt": "Production desktop home screen"
+        },
+        {
+          "src": "assets/images/stuart/sb-desk-bio.webp",
+          "alt": "Production desktop bio screen"
+        }
+      ]
+    }
+  }
+]

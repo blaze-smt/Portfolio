@@ -14,7 +14,7 @@
   position: relative;
   color: #232323;
   text-decoration: none;
-  cursor: pointer;
+  cursor: none;
   i {
     font-style: normal;
     font-size: 48px;
@@ -24,7 +24,7 @@
   &::after {
     content: "";
     position: absolute;
-    height: 4px;
+    height: 2px;
     bottom: 1px;
     margin: 0 auto;
     left: 0;
@@ -89,7 +89,7 @@
   &:hover {
     color: #fff;
     border: 1px solid rgba(255, 255, 255, 0.2);
-    cursor: pointer;
+    cursor: none;
     &::before {
       opacity: 100;
     }

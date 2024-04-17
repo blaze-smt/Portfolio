@@ -1,77 +1,19 @@
 <section id="works">
-  <div class="container">
-    <div class="section-wrapper works">
-      <div class="works-title">
-        <h3>WORK</h3>
-        <p class="subheading">
-          All websites were fully designed and developed by me across a variety
-          of frameworks, platforms, and industries
-        </p>
-        <!-- <ul class="filters">
-          <li class="filter-item">
-            <button
-              class="filter-btn"
-              type="button"
-              id="filter-all"
-              aria-controls="projects-list"
-              aria-label="Toggle all filter"
-              (click)="filterWorks($event)"
-              #filterBtnWorks
-            >
-              ALL
-            </button>
-          </li>
-          <li class="filter-item">
-            <button
-              class="filter-btn"
-              type="button"
-              id="filter-website"
-              aria-controls="projects-list"
-              aria-label="Toggle websites filter"
-              (click)="filterWorks($event)"
-              #filterBtnWorks
-            >
-              WEBSITES
-            </button>
-          </li>
-          <li class="filter-item">
-            <button
-              class="filter-btn"
-              type="button"
-              id="filter-clothing"
-              aria-controls="projects-list"
-              aria-label="Toggle clothing filter"
-              (click)="filterWorks($event)"
-              #filterBtnWorks
-            >
-              CLOTHES
-            </button>
-          </li>
-          <li class="filter-item">
-            <button
-              class="filter-btn"
-              type="button"
-              id="filter-logo"
-              aria-controls="projects-list"
-              aria-label="Toggle logo filter"
-              (click)="filterWorks($event)"
-              #filterBtnWorks
-            >
-              LOGOS
-            </button>
-          </li>
-        </ul> -->
-      </div>
-      <div class="projects-wrapper">
-        <div class="projects-list" id="projects-list">
-          <a
-            *ngFor="let work of filteredWorks"
-            class="btn-a btn-special"
-            href="{{ work.link }}"
-            target="_blank"
-          >
-            <span class="projects-bubble">{{ work.name }}</span>
-          </a>
+  <div class="works">
+    <div class="projects-wrapper">
+      <div class="projects-list" *ngIf="worksData">
+        <div class="project-wrapper" *ngFor="let work of worksData">
+          <span class="project-services">{{ work.services.join(", ") }}</span>
+          <span class="project-heading">{{ work.name }}</span>
+
+          <a [href]="work.link"
+            ><img
+              class="project-image"
+              *ngIf="work.thumbnail.src"
+              [src]="work.thumbnail.src"
+              [alt]="work.thumbnail.alt"
+          /></a>
+          <a class="project-link" href="{{ work.link }}">View project</a>
         </div>
       </div>
     </div>

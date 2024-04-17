@@ -1,4 +1,4 @@
-import { Component, AfterViewInit } from '@angular/core';
+import { Component, AfterViewInit, Renderer2, ElementRef } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 
 @Component({
@@ -7,8 +7,14 @@ import { Title } from '@angular/platform-browser';
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements AfterViewInit {
-  constructor(private titleService: Title) {
-    this.titleService.setTitle('Blaze Smith | Web Designer');
+  private trailElements: HTMLElement[] = [];
+
+  constructor(
+    private titleService: Title,
+    private renderer: Renderer2,
+    private elRef: ElementRef
+  ) {
+    this.titleService.setTitle('Blaze Smith | Designer');
   }
 
   ngAfterViewInit(): void {}

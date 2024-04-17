@@ -1,0 +1,49 @@
+<section class="project" *ngIf="worksData">
+  <div class="heading-wrapper">
+    <div class="heading-text">
+      <span class="services">{{ worksData.services.join(", ") }}</span>
+      <h1 class="heading">{{ worksData.name }}</h1>
+      <a class="link btn-contact" target="_blank" href="{{ worksData.href }}">{{
+        worksData.linkName
+      }}</a>
+      <p class="desc">
+        {{ worksData.description }}
+      </p>
+    </div>
+    <div class="thumbnail-wrapper">
+      <img class="thumbnail" src="{{ worksData.thumbnail.src }}" />
+    </div>
+  </div>
+  <div class="project-section" id="problem-section">
+    <div class="project-section-wrapper">
+      <div class="section-text">
+        <h2 class="heading">{{ worksData.problem.heading }}</h2>
+        <p class="desc">{{ worksData.problem.desc }}</p>
+      </div>
+      <div class="images-wrapper">
+        <img
+          *ngFor="let image of worksData.problem.images"
+          class="project-image"
+          [src]="image.src"
+          [alt]="image.alt"
+        />
+      </div>
+    </div>
+  </div>
+  <div class="project-section">
+    <div class="project-section-wrapper">
+      <div class="section-text">
+        <h2 class="heading">{{ worksData.solution.heading }}</h2>
+        <p class="desc">{{ worksData.solution.desc }}</p>
+      </div>
+      <div class="images-wrapper">
+        <img
+          *ngFor="let image of worksData.solution.images"
+          class="project-image"
+          [src]="image.src"
+          [alt]="image.alt"
+        />
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,6 +13,10 @@ import { HomeComponent } from './home/home.component';
 import { SocialsComponent } from './socials/socials.component';
 import { HeroComponent } from './hero/hero.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
+import { EmptySpaceComponent } from './empty-space/empty-space.component';
+import { NdaComponent } from './nda/nda.component';
+import { GenFramComponent } from './gen-fram/gen-fram.component';
+import { StuartBlueComponent } from './stuart-blue/stuart-blue.component';
 
 @NgModule({
   declarations: [
@@ -25,8 +30,12 @@ import { TestimonialsComponent } from './testimonials/testimonials.component';
     SocialsComponent,
     HeroComponent,
     TestimonialsComponent,
+    EmptySpaceComponent,
+    NdaComponent,
+    GenFramComponent,
+    StuartBlueComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
 })

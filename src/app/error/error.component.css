@@ -11,25 +11,31 @@
 }
 .header-error .landing .title-wrapper {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
-  height: 100%;
-  padding-bottom: 40px;
+  height: 100vh;
 }
 .header-error .landing .title-wrapper .error-message {
   display: flex;
   flex-direction: column;
   align-items: center;
   color: #232323;
+  height: 72%;
+  width: 420px;
+  padding: 2em;
+  border-radius: 55% 55% 0 0;
+  background-color: #232323;
 }
 .header-error .landing .title-wrapper .error-message h1 {
   margin-bottom: 0;
   font-size: 72px;
+  color: #fff;
 }
 .header-error .landing .title-wrapper .error-message span {
   margin-top: 0;
   font-size: 24px;
   text-transform: uppercase;
+  color: #fff;
 }
 .header-error .landing .title-wrapper .error-message p {
   display: flex;
@@ -37,11 +43,12 @@
   align-items: center;
   margin-top: 4em;
   font-size: 24px;
+  color: #fff;
 }
 .header-error .landing .title-wrapper .error-message p a {
   position: relative;
   text-decoration: none;
-  color: #232323;
+  color: #fff;
 }
 .header-error .landing .title-wrapper .error-message p a::after {
   content: "";
@@ -52,7 +59,7 @@
   left: 0;
   right: 0;
   width: 100%;
-  background: #232323;
+  background: #fff;
   transition: width ease-in 100ms;
 }
 .header-error .landing .title-wrapper .error-message p a:hover, .header-error .landing .title-wrapper .error-message p a:active {

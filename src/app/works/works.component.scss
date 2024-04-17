@@ -2,23 +2,101 @@
 @import "node_modules/bootstrap/scss/variables";
 @import "node_modules/bootstrap/scss/mixins";
 
+#works {
+  border: none;
+}
+
 .works {
   display: flex;
   flex-direction: column;
-  .projects-wrapper {
+  padding: 5.75rem 0;
+}
+
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6.5rem;
+  opacity: 0;
+  animation: fadeIn 0.5s forwards;
+  animation-delay: 1.8s;
+  background-color: #fff;
+}
+
+.project-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+}
+
+.project-services {
+  font-size: 1.25rem;
+}
+
+.project-heading {
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 1;
+  text-align: center;
+  z-index: 2;
+  mix-blend-mode: difference;
+  color: #fff;
+}
+
+.project-image {
+  max-width: 342px;
+  margin-top: -2.2rem;
+}
+
+.project-link {
+  margin: 1rem 0;
+  position: relative;
+  color: #232323;
+  text-decoration: none;
+  font-size: 1.25rem;
+  cursor: none;
+  i {
+    font-style: normal;
+    font-size: 48px;
+    vertical-align: middle;
+    margin-left: 6px;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    bottom: 1px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
     width: 100%;
-    margin-top: 1rem;
-    .projects-list {
-      display: flex;
-      justify-content: flex-start;
-      flex-wrap: wrap;
+    background: #232323;
+    transition: width ease-in-out 65ms;
+  }
+  &:hover,
+  &:active {
+    color: transparent;
+    background: radial-gradient(
+      rgba(92, 120, 150, 100),
+      rgba(48, 111, 178, 0.6),
+      rgba(34, 107, 184, 0.43),
+      rgba(92, 120, 150, 0.33)
+    );
+    background-clip: text;
+    &::after {
+      width: 0;
     }
   }
 }
 
-.projects-bubble {
-  font-size: 2.5rem;
-  white-space: nowrap;
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @media screen and (min-width: breakpoint-min(xxl, $grid-breakpoints)) {
@@ -39,6 +117,18 @@
 
 @media screen and (max-width: 1250px) {
   // <= 1250px
+  .project-services {
+    // font-size: 1rem;
+  }
+
+  .project-heading {
+    font-size: 2rem;
+  }
+
+  .project-image {
+    max-width: 140px;
+    margin-top: -1rem;
+  }
 }
 
 @media screen and (max-width: breakpoint-min(xl, $grid-breakpoints)) {
@@ -55,9 +145,6 @@
 
 @media screen and (max-width: breakpoint-min(sm, $grid-breakpoints)) {
   // <576px
-  .projects-bubble {
-    font-size: 2rem;
-  }
 }
 
 @media screen and (max-width: 258px) {
