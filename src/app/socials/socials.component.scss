@@ -59,7 +59,12 @@
 }
 
 @media screen and (max-width: breakpoint-min(lg, $grid-breakpoints)) {
-  // <992px
+  // <992px\
+  .social-media {
+    .social-media-icons {
+      cursor: pointer;
+    }
+  }
 }
 
 @media screen and (max-width: breakpoint-max(md, $grid-breakpoints)) {

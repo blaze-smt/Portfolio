@@ -111,11 +111,17 @@
 @media screen and (max-width: breakpoint-min(lg, $grid-breakpoints)) {
   // <992px
   .btn-contact {
+    cursor: pointer;
     i {
       font-size: 32px;
     }
     &:after {
       height: 2px;
+    }
+  }
+  .btn-special {
+    &:hover {
+      cursor: pointer;
     }
   }
 }

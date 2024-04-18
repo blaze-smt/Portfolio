@@ -137,6 +137,9 @@
 
 @media screen and (max-width: breakpoint-min(lg, $grid-breakpoints)) {
   // <992px
+  .project-link {
+    cursor: pointer;
+  }
 }
 
 @media screen and (max-width: breakpoint-max(md, $grid-breakpoints)) {

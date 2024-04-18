@@ -69,6 +69,13 @@
 
 @media screen and (max-width: breakpoint-min(lg, $grid-breakpoints)) {
   // <992px
+  .bottom {
+    .bottom-wrapper {
+      #top-btn {
+        cursor: pointer;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: breakpoint-max(md, $grid-breakpoints)) {

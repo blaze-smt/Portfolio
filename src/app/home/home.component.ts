@@ -1,5 +1,4 @@
-import { Component, AfterViewInit, Renderer2, ElementRef } from '@angular/core';
-import { Title } from '@angular/platform-browser';
+import { Component, AfterViewInit } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -9,13 +8,7 @@ import { Title } from '@angular/platform-browser';
 export class HomeComponent implements AfterViewInit {
   private trailElements: HTMLElement[] = [];
 
-  constructor(
-    private titleService: Title,
-    private renderer: Renderer2,
-    private elRef: ElementRef
-  ) {
-    this.titleService.setTitle('Blaze Smith | Designer');
-  }
+  constructor() {}
 
   ngAfterViewInit(): void {}
 }
